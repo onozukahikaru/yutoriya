@@ -1,0 +1,17 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<div class="smoothscroll-top">↑top</div>
+<style>
+.smoothscroll-top{
+   
+}
+
+</style>
+<script>
+$(function(){
+$('.smoothscroll-top').click(function(){
+var speed = 800;
+$("html, body").animate({scrollTop:0}, speed, "swing");
+return false;
+});
+});
+</script>

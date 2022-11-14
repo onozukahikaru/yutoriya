@@ -6,9 +6,29 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1667892076b030095f": {
+      "type": "apps",
+      "blocks": {
+        "6f479357-5fe8-49f0-8b7d-895108eea732": {
+          "type": "shopify:\/\/apps\/one-click-social-login\/blocks\/social-login\/8de41085-9237-4829-86d0-25e862482fec",
+          "settings": {
+            "button_font_color": "#ffffff",
+            "terms_font_color": "#000000",
+            "background_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "6f479357-5fe8-49f0-8b7d-895108eea732"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1667892076b030095f"
   ]
 }

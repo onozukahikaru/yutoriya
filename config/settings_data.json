@@ -83,10 +83,10 @@
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "text",
-    "social_twitter_link": "",
-    "social_facebook_link": "",
+    "social_twitter_link": "https:\/\/twitter.com\/kotakota8hanida",
+    "social_facebook_link": "https:\/\/www.facebook.com\/yutoriya.info",
     "social_pinterest_link": "",
-    "social_instagram_link": "",
+    "social_instagram_link": "https:\/\/www.instagram.com\/yutoriya1115\/",
     "social_tiktok_link": "",
     "social_tumblr_link": "",
     "social_snapchat_link": "",
@@ -106,15 +106,25 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Welcome to our store",
-              "text_alignment": "center",
+              "text": "ゆとり屋とは",
+              "text_alignment": "right",
               "color_scheme": "background-1",
-              "link": ""
+              "link": "shopify:\/\/blogs\/ニュース"
+            }
+          },
+          "9fd424a2-93ee-46f2-b4f8-a46a385e9b0e": {
+            "type": "announcement",
+            "settings": {
+              "text": "ブログ",
+              "text_alignment": "right",
+              "color_scheme": "background-1",
+              "link": "https:\/\/yutoriya.shop\/information\/"
             }
           }
         },
         "block_order": [
-          "announcement-bar-0"
+          "announcement-bar-0",
+          "9fd424a2-93ee-46f2-b4f8-a46a385e9b0e"
         ],
         "settings": {
         }
@@ -129,7 +139,7 @@
           "menu": "main-menu",
           "menu_type_desktop": "dropdown",
           "show_line_separator": true,
-          "enable_sticky_header": true,
+          "enable_sticky_header": false,
           "mobile_logo_position": "center",
           "margin_bottom": 0,
           "padding_top": 20,
@@ -142,38 +152,22 @@
           "footer-0": {
             "type": "link_list",
             "settings": {
-              "heading": "Quick links",
+              "heading": "",
               "menu": "footer"
-            }
-          },
-          "footer-1": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Info",
-              "menu": "footer"
-            }
-          },
-          "footer-2": {
-            "type": "text",
-            "settings": {
-              "heading": "Our mission",
-              "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
             }
           }
         },
         "block_order": [
-          "footer-0",
-          "footer-1",
-          "footer-2"
+          "footer-0"
         ],
         "settings": {
           "color_scheme": "background-1",
-          "newsletter_enable": true,
+          "newsletter_enable": false,
           "newsletter_heading": "Subscribe to our emails",
           "show_social": true,
-          "enable_country_selector": true,
+          "enable_country_selector": false,
           "enable_language_selector": false,
-          "payment_enable": true,
+          "payment_enable": false,
           "margin_top": 48,
           "padding_top": 36,
           "padding_bottom": 36
@@ -196,7 +190,93 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "16344147307131298503": {
+        "type": "shopify:\/\/apps\/\/blocks\/app-embed\/8c410064-0703-476d-add4-f33699a7cbf7",
+        "disabled": false,
+        "settings": {
+          "button_label": "再入荷時に連絡を希望する",
+          "sale_button_label": "新商品の販売告知を希望する",
+          "button_color": "#FFFFFF",
+          "button_bg_color": "#000000",
+          "sale_button_bg_color": "#FF0000",
+          "font_size": 16,
+          "button_height": 50,
+          "button_width": 300,
+          "button_radius": 0,
+          "button_border_color": "#FFFFFF",
+          "button_border": 1,
+          "modal_title": "商品の再入荷通知を受け取る",
+          "sale_modal_title": "新商品の販売通知を受け取る",
+          "modal_variation_label": "バリエーション"
+        }
+      },
+      "7612553728132747764": {
+        "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/net-promoter-score-form-modal\/a103faaf-2125-4b0e-89fa-de5149736723",
+        "disabled": true,
+        "settings": {
+          "email": "",
+          "name": "",
+          "title": "",
+          "message": "Enable advanced features and increase your monthly order limit to match your business's needs.",
+          "reason": "",
+          "thank_you": "",
+          "label_name": "",
+          "label_email": "h-onozuka@joolen.comcom"
+        }
+      },
+      "1575957009345749421": {
+        "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/side-drawer\/a103faaf-2125-4b0e-89fa-de5149736723",
+        "disabled": true,
+        "settings": {
+          "show_avatar": true,
+          "position": "left",
+          "text": "",
+          "title": "",
+          "link": "",
+          "link_text": "",
+          "background_color": "#b92525",
+          "style_color_button_text": "",
+          "style_color_star": "",
+          "style_color_text": "",
+          "style_color_link": "",
+          "review_ids": "",
+          "product_ids": "",
+          "category": "",
+          "product_brand": "",
+          "tags": "",
+          "min_rating": "none",
+          "fill_empty": false,
+          "random": false,
+          "with_photos": false
+        }
+      },
+      "4697538150380142411": {
+        "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/reviews-popup\/a103faaf-2125-4b0e-89fa-de5149736723",
+        "disabled": true,
+        "settings": {
+          "layout": "horizontal",
+          "effect": "slidetop",
+          "delay_seconds": 3,
+          "show_seconds": 10,
+          "pause_seconds": 10,
+          "position": "bottomleft",
+          "color_background": "#ffffff",
+          "color_star": "#121212",
+          "color_text": "#121212",
+          "review_ids": "",
+          "product_ids": "",
+          "category": "",
+          "product_brand": "",
+          "tags": "",
+          "min_rating": "none",
+          "fill_empty": false,
+          "random": false,
+          "with_photos": false
+        }
+      }
+    }
   },
   "presets": {
     "Default": {
