@@ -1,5 +1,22 @@
 {
   "sections": {
+    "b8bd2124-8408-4622-8232-2e9e31b0112e": {
+      "type": "mainvisual",
+      "blocks": {
+        "template--15922127962277__b8bd2124-8408-4622-8232-2e9e31b0112e-16684828377bb84665-0": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>鳥好き<\/strong>を<strong>かわいく<\/strong>自慢する<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--15922127962277__b8bd2124-8408-4622-8232-2e9e31b0112e-16684828377bb84665-0"
+      ],
+      "settings": {
+      }
+    },
     "deca8e3b-f3a7-417e-9210-1182d8a7be16": {
       "type": "ranking",
       "settings": {
@@ -188,6 +205,7 @@
     }
   },
   "order": [
+    "b8bd2124-8408-4622-8232-2e9e31b0112e",
     "deca8e3b-f3a7-417e-9210-1182d8a7be16",
     "aa2dc249-c18d-45f7-9482-69e04d042017",
     "7b0dc138-dbae-43ef-8405-0873c3a037ac",
