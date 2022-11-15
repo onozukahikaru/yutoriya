@@ -109,6 +109,44 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "d5ccae07-614e-4595-9872-aeadff8eac5f": {
+      "type": "collection-yutoriya",
+      "blocks": {
+        "template--15922127962277__d5ccae07-614e-4595-9872-aeadff8eac5f-1668482515cbb65dbd-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "template--15922127962277__d5ccae07-614e-4595-9872-aeadff8eac5f-1668482515cbb65dbd-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "template--15922127962277__d5ccae07-614e-4595-9872-aeadff8eac5f-1668482515cbb65dbd-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15922127962277__d5ccae07-614e-4595-9872-aeadff8eac5f-1668482515cbb65dbd-0",
+        "template--15922127962277__d5ccae07-614e-4595-9872-aeadff8eac5f-1668482515cbb65dbd-1",
+        "template--15922127962277__d5ccae07-614e-4595-9872-aeadff8eac5f-1668482515cbb65dbd-2"
+      ],
+      "settings": {
+        "title": "ゆとり屋の商品",
+        "heading_size": "h1",
+        "description": "<p>たくさんの商品の種類をそろえているので、選びたい放題！<br\/>希望が必ず叶う★作ってほしい商品リクエストもお待ちしています。<\/p>",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false
+      }
     }
   },
   "order": [
@@ -116,6 +154,7 @@
     "aa2dc249-c18d-45f7-9482-69e04d042017",
     "7b0dc138-dbae-43ef-8405-0873c3a037ac",
     "ed4ed50b-a474-4da5-8a1c-81ec7e87a33c",
-    "16645065979b67d39f"
+    "16645065979b67d39f",
+    "d5ccae07-614e-4595-9872-aeadff8eac5f"
   ]
 }
