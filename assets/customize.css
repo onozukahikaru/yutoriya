@@ -1,0 +1,132 @@
+/* header */
+#shopify-section-announcement-bar{
+  display: flex;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 768px) {
+  header.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .header--mobile-left .header__heading,
+  .header--mobile-left .header__heading-link{
+    width: 150px;
+  }
+  header-drawer{
+    
+  }
+  .header__icons{
+    margin-right: 50px;
+  }
+  .header_bar{
+    display: flex;
+  }
+  .menu-drawer{
+    width: 100%;
+    background: #FFF8F5;
+  }
+  #shopify-section-announcement-bar{
+    display: none;
+  }
+}
+
+
+
+/* メインビジュアル */
+.section_mainvisual{
+  background: url(../assets/mv_bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  position: relative;
+}
+.section_mainvisual .banner{
+  height: 200px;
+  bottom: -130px;
+  z-index: 2;
+}
+.section_mainvisual .banner__media{
+  background-color: transparent;
+}
+.section_mainvisual .banner__box{
+  position: absolute;
+  top: -110px;
+  font-size: 2rem;
+  background: transparent;
+}
+@media screen and (min-width: 769px) {
+  .section_mainvisual{
+    background: url(../assets/mv_bg.png);
+    background-size: contain;
+    background-position: center;
+    height: 560px;
+  }
+  .section_mainvisual .banner{
+    height: 370px;
+    bottom: -240px;
+  }
+  .section_mainvisual .banner__media.media > img{
+    max-height: 370px;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+  }
+}
+
+/* footer */
+footer.footer{
+  background: #FFEBE3;
+  position: relative;
+}
+.footer_contact a{
+  color: white;
+  background: #F39800;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  padding: 20px;
+  border-radius: 40px;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+}
+.footer_official{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer_official a{
+  width: 100%;
+  height: 84px;
+  background: white;
+  border-radius: 8px;
+  text-align: center;
+}
+.footer_official img{
+  max-width: 170px;
+}
+.footer .list-social__item .icon {
+  height: 5rem;
+  width: 5rem;
+}
+.footer__copyright{
+  color: #EA9573;
+}
+@media screen and (min-width: 769px){
+  .footer_official a{
+    max-width: 280px;
+    height: 72px;
+  }
+  .footer_flex{
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .list-social__item .icon {
+    height: 4rem;
+    width: 4rem;
+  }
+}

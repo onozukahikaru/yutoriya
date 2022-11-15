@@ -215,8 +215,9 @@
         }
       }
     {% endstyle %}
-
+    {{ 'reset.css' | asset_url | stylesheet_tag }}
     {{ 'base.css' | asset_url | stylesheet_tag }}
+    {{ 'customize.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
@@ -286,6 +287,13 @@
         shareSuccess: `{{ 'general.share.success_message' | t }}`,
         pauseSlideshow: `{{ 'sections.slideshow.pause_slideshow' | t }}`,
         playSlideshow: `{{ 'sections.slideshow.play_slideshow' | t }}`,
+      }
+      var links = document.links;
+      for (let i = 0, linksLength = links.length ; i < linksLength ; i++) {
+        if (links[i].hostname !== window.location.hostname) {
+          links[i].target = '_blank';
+          links[i].rel = 'noreferrer noopener';
+        }
       }
     </script>
 
