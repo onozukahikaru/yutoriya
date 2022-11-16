@@ -123,7 +123,7 @@
   </symbol>
 </svg>
 <{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
-  <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}">
+  <header class="header header--{{ section.settings.logo_position }} header--mobile-{{ section.settings.mobile_logo_position }} {% if section.settings.menu != blank %} header--has-menu{% endif %}">
     
     {%- if section.settings.logo_position == 'top-center' or section.settings.menu == blank -%}
       <details-modal class="header__search">
@@ -255,14 +255,23 @@
                     <details id="Details-HeaderMenu-{{ forloop.index }}">
                       <summary class="header__menu-item list-menu__item link focus-inset">
                         <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
-                        {% render 'icon-caret' %}
                       </summary>
+                      <script>
+                        document.getElementById("Details-HeaderMenu-{{ forloop.index }}").addEventListener("mouseenter", function( event ) {
+                        event.target.setAttribute("open", "");
+                        });
+                                                
+                        document.getElementById("Details-HeaderMenu-{{ forloop.index }}").addEventListener("mouseleave", function( event ) {
+                        event.target.removeAttribute("open");
+                        });
+                      </script>
                       <ul id="HeaderMenu-MenuList-{{ forloop.index }}" class="header__submenu list-menu list-menu--disclosure gradient caption-large motion-reduce global-settings-popup" role="list" tabindex="-1">
                         {%- for childlink in link.links -%}
                           <li>
                             {%- if childlink.links == blank -%}
                               <a href="{{ childlink.url }}" class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if childlink.current %} list-menu__item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
                                 {{ childlink.title | escape }}
+                                <img src="{{ 'icon_menuarrow.png' | asset_img_url: '50x' }}" class="menuarrow">
                               </a>
                             {%- else -%}
                               <details id="Details-HeaderSubMenu-{{ forloop.index }}">
@@ -464,8 +473,8 @@
         </details>
       </details-modal>
     
-      <a class="" href="/a/wishlist">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.079" height="22.669" viewBox="0 0 25.079 22.669">
+      <a class="header__icon" href="/a/wishlist">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25.079" height="22.669" viewBox="0 0 25.079 22.669" class="icon">
           <defs>
             <clipPath id="clip-path">
               <path id="パス_66" data-name="パス 66" d="M0,0H25.079V22.669H0Z" fill="none"/>
@@ -532,21 +541,22 @@
                           <details id="Details-menu-drawer-menu-item-{{ forloop.index }}">
                             <summary class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.child_active %} menu-drawer__menu-item--active{% endif %}">
                               {{ link.title | escape }}
-                              {% render 'icon-arrow' %}
+                              <img src="{{ 'icon_menuplus.png' | asset_img_url: '50x' }}" class="menuplus">
                               {% render 'icon-caret' %}
                             </summary>
                             <div id="link-{{ link.handle | escape }}" class="menu-drawer__submenu has-submenu gradient motion-reduce" tabindex="-1">
                               <div class="menu-drawer__inner-submenu">
-                                <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
+                                {% comment %} <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
                                   {% render 'icon-arrow' %}
                                   {{ link.title | escape }}
-                                </button>
+                                </button> {% endcomment %}
                                 <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
                                   {%- for childlink in link.links -%}
                                     <li>
                                       {%- if childlink.links == blank -%}
                                         <a href="{{ childlink.url }}" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if childlink.current %} menu-drawer__menu-item--active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
                                           {{ childlink.title | escape }}
+                                          <img src="{{ 'icon_menuarrow.png' | asset_img_url: '50x' }}" class="menuarrow">
                                         </a>
                                       {%- else -%}
                                         <details id="Details-menu-drawer-submenu-{{ forloop.index }}">
@@ -556,15 +566,16 @@
                                             {% render 'icon-caret' %}
                                           </summary>
                                           <div id="childlink-{{ childlink.handle | escape }}" class="menu-drawer__submenu has-submenu gradient motion-reduce">
-                                            <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
+                                            {% comment %} <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
                                               {% render 'icon-arrow' %}
                                               {{ childlink.title | escape }}
-                                            </button>
+                                            </button> {% endcomment %}
                                             <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
                                               {%- for grandchildlink in childlink.links -%}
                                                 <li>
                                                   <a href="{{ grandchildlink.url }}" class="menu-drawer__menu-item link link--text list-menu__item focus-inset{% if grandchildlink.current %} menu-drawer__menu-item--active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
                                                     {{ grandchildlink.title | escape }}
+                                                    <img src="{{ 'icon_menuarrow.png' | asset_img_url: '50x' }}" class="menuarrow">
                                                   </a>
                                                 </li>
                                               {%- endfor -%}
@@ -581,6 +592,7 @@
                         {%- else -%}
                           <a href="{{ link.url }}" class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"{% if link.current %} aria-current="page"{% endif %}>
                             {{ link.title | escape }}
+                            <img src="{{ 'icon_menuarrow.png' | asset_img_url: '50x' }}" class="menuarrow">
                           </a>
                         {%- endif -%}
                       </li>
@@ -588,9 +600,12 @@
                   </ul>
                 </nav>
                 <div class="menu-drawer__utility-links">
+                  
+                  <a href="/pages/about" class="menu-drawer__account link focus-inset h5">ゆとり屋とは</a>
+                  <a href="https://yutoriya.shop/information/" class="menu-drawer__account link focus-inset h5 bloglink" target="_blank" rel="noreferrer noopener">ブログ</a>
+                  <a href="/pages/contact" class="menu-drawer__account link focus-inset h5">お問い合わせ</a>
                   {%- if shop.customer_accounts_enabled -%}
                     <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="menu-drawer__account link focus-inset h5">
-                      {% render 'icon-account' %}
                       {%- liquid
                         if customer
                           echo 'customer.account_fallback' | t
@@ -601,30 +616,6 @@
                     </a>
                   {%- endif -%}
                   <ul class="list list-social list-unstyled" role="list">
-                    {%- if settings.social_twitter_link != blank -%}
-                      <li class="list-social__item">
-                        <a href="{{ settings.social_twitter_link }}" class="list-social__link link">
-                          {%- render 'icon-twitter' -%}
-                          <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
-                        </a>
-                      </li>
-                    {%- endif -%}
-                    {%- if settings.social_facebook_link != blank -%}
-                      <li class="list-social__item">
-                        <a href="{{ settings.social_facebook_link }}" class="list-social__link link">
-                          {%- render 'icon-facebook' -%}
-                          <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
-                        </a>
-                      </li>
-                    {%- endif -%}
-                    {%- if settings.social_pinterest_link != blank -%}
-                      <li class="list-social__item">
-                        <a href="{{ settings.social_pinterest_link }}" class="list-social__link link">
-                          {%- render 'icon-pinterest' -%}
-                          <span class="visually-hidden">{{ 'general.social.links.pinterest' | t }}</span>
-                        </a>
-                      </li>
-                    {%- endif -%}
                     {%- if settings.social_instagram_link != blank -%}
                       <li class="list-social__item">
                         <a href="{{ settings.social_instagram_link }}" class="list-social__link link">
@@ -633,6 +624,34 @@
                         </a>
                       </li>
                     {%- endif -%}
+
+                    {%- if settings.social_facebook_link != blank -%}
+                      <li class="list-social__item">
+                        <a href="{{ settings.social_facebook_link }}" class="list-social__link link">
+                          {%- render 'icon-facebook' -%}
+                          <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
+                        </a>
+                      </li>
+                    {%- endif -%}
+
+                    {%- if settings.social_twitter_link != blank -%}
+                      <li class="list-social__item">
+                        <a href="{{ settings.social_twitter_link }}" class="list-social__link link">
+                          {%- render 'icon-twitter' -%}
+                          <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
+                        </a>
+                      </li>
+                    {%- endif -%}
+                    
+                    {%- if settings.social_pinterest_link != blank -%}
+                      <li class="list-social__item">
+                        <a href="{{ settings.social_pinterest_link }}" class="list-social__link link">
+                          {%- render 'icon-pinterest' -%}
+                          <span class="visually-hidden">{{ 'general.social.links.pinterest' | t }}</span>
+                        </a>
+                      </li>
+                    {%- endif -%}
+                    
                     {%- if settings.social_tiktok_link != blank -%}
                       <li class="list-social__item">
                         <a href="{{ settings.social_tiktok_link }}" class="list-social__link link">
