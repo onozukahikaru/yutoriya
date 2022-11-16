@@ -138,7 +138,7 @@
           "logo_width": 250,
           "logo_position": "top-left",
           "menu": "main-menu",
-          "menu_type_desktop": "mega",
+          "menu_type_desktop": "dropdown",
           "show_line_separator": false,
           "enable_sticky_header": false,
           "mobile_logo_position": "left",
