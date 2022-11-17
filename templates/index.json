@@ -154,6 +154,44 @@
         "swipe_on_mobile": false
       }
     },
+    "deb9f57d-c06b-467b-8c87-2b582d70dfbf": {
+      "type": "about",
+      "blocks": {
+        "template--15922127962277__deb9f57d-c06b-467b-8c87-2b582d70dfbf-16686751903db4aa85-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>ゆとり屋とは<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--15922127962277__deb9f57d-c06b-467b-8c87-2b582d70dfbf-16686751903db4aa85-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ゆとり屋から概要メッセージが⼊りますゆとり屋から概要メッセージが⼊ります<br\/>ゆとり屋から概要メッセージが⼊ります<\/p>"
+          }
+        },
+        "template--15922127962277__deb9f57d-c06b-467b-8c87-2b582d70dfbf-16686751903db4aa85-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "ゆとり屋の思いを見る",
+            "button_link": "shopify:\/\/pages\/about",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15922127962277__deb9f57d-c06b-467b-8c87-2b582d70dfbf-16686751903db4aa85-0",
+        "template--15922127962277__deb9f57d-c06b-467b-8c87-2b582d70dfbf-16686751903db4aa85-1",
+        "template--15922127962277__deb9f57d-c06b-467b-8c87-2b582d70dfbf-16686751903db4aa85-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "ed4ed50b-a474-4da5-8a1c-81ec7e87a33c": {
       "type": "featured-blog",
       "settings": {
@@ -197,6 +235,7 @@
     "aa2dc249-c18d-45f7-9482-69e04d042017",
     "e565a449-39b9-4b5c-95bd-8a249ee4b9c4",
     "d5ccae07-614e-4595-9872-aeadff8eac5f",
+    "deb9f57d-c06b-467b-8c87-2b582d70dfbf",
     "ed4ed50b-a474-4da5-8a1c-81ec7e87a33c",
     "16645065979b67d39f"
   ]
