@@ -50,65 +50,6 @@
         "swipe_on_mobile": false
       }
     },
-    "7b0dc138-dbae-43ef-8405-0873c3a037ac": {
-      "type": "rich-text",
-      "blocks": {
-        "template--15841039253669__7b0dc138-dbae-43ef-8405-0873c3a037ac-1668400320b38d0877-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>ゆとり屋とは<\/p>",
-            "heading_size": "h1"
-          }
-        },
-        "template--15841039253669__7b0dc138-dbae-43ef-8405-0873c3a037ac-1668400320b38d0877-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>ゆとり屋から概要メッセージが⼊りますゆとり屋から概要メッセージが⼊ります<br\/>ゆとり屋から概要メッセージが⼊ります<\/p>"
-          }
-        },
-        "template--15841039253669__7b0dc138-dbae-43ef-8405-0873c3a037ac-1668400320b38d0877-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "ゆとり屋の思いを見る",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--15841039253669__7b0dc138-dbae-43ef-8405-0873c3a037ac-1668400320b38d0877-0",
-        "template--15841039253669__7b0dc138-dbae-43ef-8405-0873c3a037ac-1668400320b38d0877-1",
-        "template--15841039253669__7b0dc138-dbae-43ef-8405-0873c3a037ac-1668400320b38d0877-2"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "ed4ed50b-a474-4da5-8a1c-81ec7e87a33c": {
-      "type": "featured-blog",
-      "settings": {
-        "heading": "お知らせ",
-        "heading_size": "h1",
-        "blog": "ニュース",
-        "post_limit": 3,
-        "columns_desktop": 3,
-        "color_scheme": "background-1",
-        "show_image": false,
-        "show_date": true,
-        "show_author": false,
-        "show_view_all": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "e565a449-39b9-4b5c-95bd-8a249ee4b9c4": {
       "type": "collection-bird",
       "blocks": {
@@ -185,6 +126,65 @@
         "swipe_on_mobile": false
       }
     },
+    "7b0dc138-dbae-43ef-8405-0873c3a037ac": {
+      "type": "rich-text",
+      "blocks": {
+        "template--15841039253669__7b0dc138-dbae-43ef-8405-0873c3a037ac-1668400320b38d0877-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>ゆとり屋とは<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--15841039253669__7b0dc138-dbae-43ef-8405-0873c3a037ac-1668400320b38d0877-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>ゆとり屋から概要メッセージが⼊りますゆとり屋から概要メッセージが⼊ります<br\/>ゆとり屋から概要メッセージが⼊ります<\/p>"
+          }
+        },
+        "template--15841039253669__7b0dc138-dbae-43ef-8405-0873c3a037ac-1668400320b38d0877-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "ゆとり屋の思いを見る",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15841039253669__7b0dc138-dbae-43ef-8405-0873c3a037ac-1668400320b38d0877-0",
+        "template--15841039253669__7b0dc138-dbae-43ef-8405-0873c3a037ac-1668400320b38d0877-1",
+        "template--15841039253669__7b0dc138-dbae-43ef-8405-0873c3a037ac-1668400320b38d0877-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "ed4ed50b-a474-4da5-8a1c-81ec7e87a33c": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "お知らせ",
+        "heading_size": "h1",
+        "blog": "ニュース",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_image": false,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "16645065979b67d39f": {
       "type": "apps",
       "blocks": {
@@ -209,10 +209,10 @@
     "b8bd2124-8408-4622-8232-2e9e31b0112e",
     "deca8e3b-f3a7-417e-9210-1182d8a7be16",
     "aa2dc249-c18d-45f7-9482-69e04d042017",
-    "7b0dc138-dbae-43ef-8405-0873c3a037ac",
-    "ed4ed50b-a474-4da5-8a1c-81ec7e87a33c",
     "e565a449-39b9-4b5c-95bd-8a249ee4b9c4",
     "d5ccae07-614e-4595-9872-aeadff8eac5f",
+    "7b0dc138-dbae-43ef-8405-0873c3a037ac",
+    "ed4ed50b-a474-4da5-8a1c-81ec7e87a33c",
     "16645065979b67d39f"
   ]
 }
