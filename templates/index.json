@@ -94,16 +94,34 @@
         "template--15922127962277__d5ccae07-614e-4595-9872-aeadff8eac5f-1668482515cbb65dbd-0": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "tシャツ"
           }
         },
         "template--15922127962277__d5ccae07-614e-4595-9872-aeadff8eac5f-1668482515cbb65dbd-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": ""
+            "collection": "パーカー-トレーナー"
           }
         },
         "template--15922127962277__d5ccae07-614e-4595-9872-aeadff8eac5f-1668482515cbb65dbd-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "74914422-c6be-4a8a-87a9-0451f3500087": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "9cb30c67-1076-4d52-bec8-b366eb2e74da": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
+        },
+        "0d22a057-34a2-41e7-bad8-5fe6dd310a49": {
           "type": "featured_collection",
           "settings": {
             "collection": ""
@@ -113,7 +131,10 @@
       "block_order": [
         "template--15922127962277__d5ccae07-614e-4595-9872-aeadff8eac5f-1668482515cbb65dbd-0",
         "template--15922127962277__d5ccae07-614e-4595-9872-aeadff8eac5f-1668482515cbb65dbd-1",
-        "template--15922127962277__d5ccae07-614e-4595-9872-aeadff8eac5f-1668482515cbb65dbd-2"
+        "template--15922127962277__d5ccae07-614e-4595-9872-aeadff8eac5f-1668482515cbb65dbd-2",
+        "74914422-c6be-4a8a-87a9-0451f3500087",
+        "9cb30c67-1076-4d52-bec8-b366eb2e74da",
+        "0d22a057-34a2-41e7-bad8-5fe6dd310a49"
       ],
       "settings": {
         "title": "ゆとり屋の商品",
