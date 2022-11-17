@@ -23,7 +23,7 @@
       "settings": {
         "title": "ランキング",
         "heading_size": "h1",
-        "collection": "",
+        "collection": "ランキング",
         "products_to_show": 5,
         "columns_desktop": 5,
         "full_width": false,
