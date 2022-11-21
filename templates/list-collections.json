@@ -9,16 +9,9 @@
         "columns_desktop": 3,
         "columns_mobile": "2"
       }
-    },
-    "16679819773eac8139": {
-      "type": "apps",
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
-    "main",
-    "16679819773eac8139"
+    "main"
   ]
 }
