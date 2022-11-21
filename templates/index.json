@@ -41,7 +41,7 @@
         "description": "<p>ゆとり屋厳選の商品をピックアップ。⿃好きにはたまらない商品を集めました！<\/p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "",
+        "collection": "おすすめ",
         "products_to_show": 4,
         "columns_desktop": 5,
         "full_width": false,
