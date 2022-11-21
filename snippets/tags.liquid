@@ -1,0 +1,13 @@
+{% assign tag_list = "" %}
+
+{% for product in collections.all.products %}
+	{% for tag in product.tags %}
+		{% assign tag_list = tag_list | append: "," | append: tag %}
+	{% endfor %}
+{% endfor %}
+
+{% for tag in product.tags %}
+  {% if tag contains "label_" %}
+    <span class="label_tags">{{ tag | remove: "label_" }}</span>
+  {% endif %}
+{% endfor %}

@@ -2,6 +2,10 @@
 html, 
 body{
   font-family:"Helvetica Neue",　YuGothic, 'Noto Sans JP', sans-serif;
+  overflow-x: hidden;
+}
+body.homepage{
+  background: #FFFBF4;
 }
 .icon.icon-close{
   fill: black;
@@ -9,6 +13,31 @@ body{
 a:hover{
   opacity: 0.7;
 }
+.underline-links-hover:hover .card__heading a{
+  color: #EA9573;
+}
+.card__information a{
+  background: #C47A8F;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 6px 10px;
+}
+.collection-list__item a:hover{
+  background: #935B6B;
+  opacity: 1;
+}
+.button:not([disabled]):hover::after,
+.shopify-challenge__button:hover::after,
+.customer button:hover::after,
+.shopify-payment-button__button--unbranded:hover::after{
+  box-shadow: none;
+}
+body.homepage .price--on-sale .price-item--regular{
+  display: none;
+}
+
+
 /* header */
 header.header{
   padding-top: 35px;
@@ -499,8 +528,8 @@ footer .footer__content-top{
   border-top: none;
   padding-top: 0;
 }
-.list-social__link{
-  padding: 0.5;
+.footer .list-social__link{
+  padding:0 0.5rem;
 }
 .footer-block.grid__item{
   margin-top: 5rem;
@@ -523,10 +552,10 @@ footer .footer__localization:empty + .footer__column{
 }
 .btn_arrow:hover{
   opacity: 1;
+
 }
 .btn_arrow{
   position: relative;
-
 }
 .btn_arrow::after{
   content: '';
@@ -544,11 +573,33 @@ footer .footer__localization:empty + .footer__column{
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
 }
+.collection-list-view-all .btn_arrow:hover,
+.section_about .btn_arrow:hover
+{
+  background: #75957D;
+}
 @media screen and (max-width: 768px){
   .btn_arrow{
     width: 100%;
   
   }
+  .footer .footer-block.grid__item{
+    position: relative;
+  }
+  .footer .footer-block.grid__item::after{
+    content: '';
+    background: url(../assets/bird-b-2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 120px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: auto;
+    right: -20px;
+  }
+
 }
 @media screen and (min-width: 769px){
   footer.footer::before{
@@ -563,11 +614,12 @@ footer .footer__localization:empty + .footer__column{
     height: 110px;
   }
   footer .footer-block--newsletter {
-      margin-top: 0rem;
+    margin-top: 0rem;
   }
   .footer_contact a{
     padding: 15px 0;
     max-width: 240px;
+    margin-left: 1rem;
   }
   .footer_official a{
     max-width: 280px;
@@ -613,11 +665,41 @@ footer .footer__localization:empty + .footer__column{
   footer .footer__content-bottom{
     padding-top: 0;
   }
+  .footer .footer__list-social{
+    position: relative;
+  }
+  .footer .footer__list-social::before{
+    content: '';
+    background: url(../assets/bird-b-4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 160px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    right: auto;
+  }
+  .footer .footer__list-social::after{
+    content: '';
+    background: url(../assets/bird-b-2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 170px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: auto;
+    right: -20px;
+  }
 }
 
 /*　セクション　*/
 .shopify-section .grid__item{
   padding: 1rem;
+  position: relative;
 }
 .card--card, 
 .card--standard .card__inner{
@@ -626,11 +708,53 @@ footer .footer__localization:empty + .footer__column{
 .shopify-section .card__media .media img{
   object-fit: contain;
 }
+.price--sold-out .price__availability, 
+.price__regular,
+.price:not(.price--show-badge) .price-item--last:last-of-type{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: block;
+  width: 100%;
+  padding: 1rem 0;
+}
+.card .card__information .price__container{
+  display: block;
+  text-align: center;
+  font-family: 'Noto Sans JP';
+}
+.card .card__content{
+  overflow: hidden;
+}
+.card .card__badge{
+  flex: none;
+  display: block;
+  position: absolute;
+  top: -64px;
+  left: -34px;
+}
+.badge.sale{
+  background: #FF4040;
+  border: none;
+  border-radius: 0;
+  transform: rotate(-40deg);
+  -moz-transform: rotate(-40deg);
+  -webkit-transform: rotate(-40deg);
+  padding: 3px 44px;
+  display: block;
+  width: 100%;
+}
+.card:hover .media.media--hover-effect > img:first-child:only-child, 
+.card-wrapper:hover .media.media--hover-effect > img:first-child:only-child{
+  transform: scale(1)!important;
+  opacity: 0.7;
+}
+
 
 /* ランキング */
 .section_ranking{
   background: #FFFCEF;
   padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 .section_ranking .collection__title{
   text-align: center;
@@ -654,8 +778,103 @@ footer .footer__localization:empty + .footer__column{
   z-index: -1;
 }
 .section_ranking .collection__title h2.title{
-  font-size: 2rem;
+  font-size: 2.5rem;
+  margin: 4rem 0;
 }
+.section_ranking .card__information a{
+  background: none;
+  color: black;
+  font-size: inherit;
+  font-weight: normal;
+  padding: 0;
+}
+.section_ranking.shopify-section .grid__item{
+  padding-top: 3rem;
+}
+.section_ranking .grid__item::after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  display: block;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+}
+.section_ranking .grid__item:first-child::after {
+  background-size: contain;
+  background-image: url(../assets/icon-ranking1.png);
+}
+.section_ranking .grid__item:nth-child(2)::after {
+  background-image: url(../assets/icon-ranking2.png);
+  background-size: contain;
+}
+.section_ranking .grid__item:nth-child(3)::after {
+  background-image: url(../assets/icon-ranking3.png);
+  background-size: contain;
+}
+.section_ranking .grid__item:nth-child(4)::after {
+  background-image: url(../assets/icon-ranking4.png);
+  background-size: contain;
+}
+.section_ranking .grid__item:nth-child(5)::after {
+  background-image: url(../assets/icon-ranking5.png);
+  background-size: contain;
+}
+.section_ranking .page-width-desktop{
+  position: relative;
+}
+.section_ranking .page-width-desktop::before{
+  content: '';
+  background: url(../assets/sec_bg_green.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: -50px;
+  left: -70px;
+}
+.section_ranking .page-width-desktop::after{
+  content: '';
+  background: url(../assets/bg_flower1.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom: -200px;
+  left: 30px;
+}
+@media screen and (min-width: 769px){
+  .section_ranking .collection__title::before{
+    width: 160px;
+    height: 160px;
+  }
+  .section_ranking .page-width-desktop::before{
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    top: -120px;
+  }
+  .section_ranking .page-width-desktop::after{
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    bottom: -210px;
+    left: 30px;
+  }
+}
+
+
 
 
 
@@ -667,6 +886,7 @@ footer .footer__localization:empty + .footer__column{
 .section_recommend .collection__title{
   text-align: center;
   position: relative;
+  margin: 4rem auto;
 }
 .section_recommend .collection__title::before{
   content: '';
@@ -685,8 +905,75 @@ footer .footer__localization:empty + .footer__column{
   -ms-transform: translate(-50%, -50%);
   z-index: -1;
 }
+.section_recommend .collection__title::after{
+  content: '';
+  background: url(../assets/bird-crown.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: -180px;
+  right: -20px;
+}
 .section_recommend .collection__title h2.title{
-  font-size: 2rem;
+  font-size: 2.5rem;
+}
+.section_recommend .card__information a{
+  background: none;
+  color: black;
+  font-size: inherit;
+  font-weight: normal;
+  padding: 0;
+}
+.label_tags{
+  font-size: 1.2rem;
+  padding-left: 2rem;
+  position: relative;
+}
+.label_tags::before{
+  content: '';
+  background: url(../assets/icon_tag.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media screen and (min-width: 769px){
+  .section_recommend .collection__title::before{
+    width: 180px;
+    height: 180px;
+  }
+  .section_recommend .collection__title::after{
+    width: 200px;
+    height: 230px;
+  }
+  .section_recommend.shopify-section .grid__item{
+    max-width: 180px;
+  }
+}
+
+
+
+/* Swiper */
+.swiper-button-prev:after, 
+.swiper-rtl .swiper-button-next:after,
+.swiper-button-next:after, 
+.swiper-rtl .swiper-button-prev:after{
+  display: none;
+}
+.slider-button img{
+  width: 100%;
+}
+.swiper-button-next img{
+  transform: rotate(180deg);
 }
 
 
@@ -694,15 +981,45 @@ footer .footer__localization:empty + .footer__column{
 /* 種類 */
 .section-collection-bird{
   background: #FFF7F9;
-  padding-top: 10rem;
+  padding-top: 12rem;
+  padding-bottom: 19rem;
+  position: relative;
+}
+.section-collection-bird .collection-list-wrapper::after{
+  content: '';
+  background: url(../assets/bg_flower3.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  bottom: -180px;
+  right: 0;
 }
 .section-collection-bird .title-wrapper-with-link{
   display: block;
   text-align: center;
+  position: relative;
+}
+.section-collection-bird .title-wrapper-with-link::before{
+  content: '';
+  background: url(../assets/bg_flower2.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  width: 180px;
+  height: 200px;
+  position: absolute;
+  top: -180px;
+  left: 0;
 }
 .section-collection-bird h2.collection-list-title{
-  font-size: 2rem;
+  font-size: 2.5rem;
   position: relative;
+  margin: 4rem 0;
 }
 .section-collection-bird h2.collection-list-title::before{
   content: '';
@@ -721,15 +1038,24 @@ footer .footer__localization:empty + .footer__column{
   -ms-transform: translate(-50%, -50%);
   z-index: -1;
 }
-.section-collection-bird .collection__description {
-  text-align: center;
-}
-.section-collection-bird .card__information a{
-  background: #C47A8F;
-  color: white;
-  font-size: 1.2rem;
-  font-weight: 600;
-  padding: 6px 10px;
+@media screen and (min-width: 769px){
+  .section-collection-bird{
+    padding-bottom: 9rem;
+  }
+  .section-collection-bird .collection-list-wrapper::after{
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    bottom: -100px;
+    right: -50px;
+  }
+  .section-collection-bird .collection__description {
+    text-align: center;
+  }
+  .section-collection-bird .title-wrapper-with-link::before{
+    width: 230px;
+    height: 260px;
+  }
 }
 
 
@@ -738,14 +1064,16 @@ footer .footer__localization:empty + .footer__column{
 .section-collection-yutoriya{
   background: #F4FFF4;
   padding-top: 10rem;
+  position: relative;
 }
 .section-collection-yutoriya .title-wrapper-with-link{
   display: block;
   text-align: center;
 }
 .section-collection-yutoriya h2.collection-list-title{
-  font-size: 2rem;
+  font-size: 2.5rem;
   position: relative;
+  margin: 4rem 0;
 }
 .section-collection-yutoriya h2.collection-list-title::before{
   content: '';
@@ -754,8 +1082,8 @@ footer .footer__localization:empty + .footer__column{
   background-position: center;
   background-repeat: no-repeat;
   display: block;
-  width: 140px;
-  height: 140px;
+  width: 150px;
+  height: 150px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -767,36 +1095,65 @@ footer .footer__localization:empty + .footer__column{
 .section-collection-yutoriya .collection__description {
   text-align: center;
 }
-.section-collection-yutoriya .card__information a{
-  background: #C47A8F;
-  color: white;
-  font-size: 1.2rem;
-  font-weight: 600;
-  padding: 6px 10px;
+@media screen and (max-width: 768px){
+  .section-collection-yutoriya::before{
+    content: '';
+    background: url(../assets/bird-honey.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: -90px;
+    left: 0;
+  }
 }
+@media screen and (min-width: 769px){
+  .section-collection-yutoriya h2.collection-list-title::before{
+    width: 210px;
+    height: 210px;
+  }
+  .section-collection-yutoriya h2.collection-list-title::after{
+    content: '';
+    background: url(../assets/bird-honey.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -90px;
+    left: -90px;
+  }
+}
+
 
 
 
 /* ゆとり屋とは */
 .section_about{
   background: #EBFBFF;
-  padding-top: 10rem;
+  padding-top: 5rem;
   position: relative;
 }
 .section_about::after{
   content: '';
   background: url(../assets/bg_about.png);
-  background-size: contain;
+  background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
   display: block;
   width: 100%;
-  height: 380px;
+  height: 260px;
 }
 .section_about .rich-text__heading{
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
   position: relative;
+  margin: 4rem 0;
 }
 .section_about .rich-text__heading::before{
   content: '';
@@ -805,8 +1162,8 @@ footer .footer__localization:empty + .footer__column{
   background-position: center;
   background-repeat: no-repeat;
   display: block;
-  width: 140px;
-  height: 140px;
+  width: 170px;
+  height: 170px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -814,4 +1171,186 @@ footer .footer__localization:empty + .footer__column{
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   z-index: -1;
+}
+@media screen and (min-width: 769px){
+  .section_about::after{
+    background-size: contain;
+    height: 380px;
+  }
+  .section_about .rich-text__heading::before{
+    width: 220px;
+    height: 220px;
+  }
+}
+
+
+/* お知らせ */
+.blog .blog__posts.articles-wrapper{
+  display: block;
+  padding: 0 1.5rem;
+}
+.blog .card__information a{
+  color: black;
+  background: no-repeat;
+  font-size: inherit;
+  font-weight: normal;
+  padding: 0;
+}
+.blog .blog__title{
+  font-size: 2.5rem;
+}
+.blog .subtitle{
+  color: #F3D3C7;
+  font-family: 'Noto Sans JP';
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.blog .title-wrapper-with-link{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+}
+.blog .title-wrapper-with-link::after{
+  content: '';
+  background: url(../assets/bg_flower4.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.blog__posts.articles-wrapper .article {
+  scroll-snap-align: start;
+  width: 100%;
+  max-width: 100%;
+}
+.blog .article-card .card__heading{
+  margin-bottom: 0;
+}
+.blog .article-card__info{
+  font-family: 'Noto Sans JP';
+  margin-bottom: 1rem;
+  padding: 0;
+}
+.blog .card__.blog-articles .article-card .card__information, 
+.blog .blog__posts .article-card .card__information{
+  padding-left: 0;
+  padding-right: 0;
+  border-bottom: 1px solid #ccc;
+}
+.blog .grid--peek.slider .grid__item:first-of-type{
+  margin-left: 0;
+}
+
+@media screen and (min-width: 769px){
+  .blog .page-width-desktop{
+    display: flex;
+    justify-content: center;
+  }
+  .blog .title-wrapper-with-link{
+    flex-direction: row;
+    width: 30%;
+  }
+  .blog .title-wrapper-with-link::after{
+    width: 210px;
+    height: 180px;
+    position: absolute;
+    top: auto;
+    right: auto;
+    left: 0;
+    bottom: -40px;
+  }
+  .blog .blog__posts.articles-wrapper{
+    width: 70%;
+  }
+  .blog .card__information{
+    display: flex;
+    align-items: center;
+  }
+  .blog .article-card__info{
+    margin: 0;
+  }
+  .blog .card__information a{
+    font-size: 1.6rem;
+    margin-left: 2rem;
+  }
+}
+
+/* Instagram */
+.homepage .section_app{
+  background: #FFFBF4;
+  padding-top: 15rem;
+  padding-bottom: 8rem;
+}
+#insta-feed h2{
+  position: relative;
+  font-size: 2.5rem;
+  margin-bottom: 6rem;
+}
+#insta-feed h2::before{
+  content: '';
+  background: url(../assets/bg_icon-ig.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 0;
+}
+.app_instagram{
+  position: relative;
+}
+.app_instagram::before{
+  content: '';
+  background: url(../assets/bird-honey2.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  width: 160px;
+  height: 150px;
+  position: absolute;
+  top: -210px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+}
+
+@media screen and (min-width: 769px){
+  .homepage .section_app{
+    padding-top: 8rem;
+    padding-bottom: 3rem;
+  }
+  #insta-feed h2::before{
+    width: 70px;
+    height: 70px;
+  }
+  .app_instagram::before{
+    content: '';
+    background: url(../assets/bird-honey2.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -160px;
+    right: 0;
+    z-index: 0;
+  }
 }
