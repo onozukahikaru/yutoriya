@@ -86,12 +86,12 @@
       }}
     </div>
   {%- endif -%}
-  <div class="banner__content banner__content--{{ section.settings.desktop_content_position }} page-width">
+  <div class="banner__content">
     <div class="banner__box content-container content-container--full-width-mobile color-{{ section.settings.color_scheme }} gradient">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'text' -%}
-            <div class="image-with-text__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+            <div class="image-with-text__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}><h1>{{ block.settings.text }}</h1></div>
         {%- endcase -%}
       {%- endfor -%}
     </div>
@@ -117,9 +117,9 @@
       "limit": 1,
       "settings": [
         {
-          "type": "richtext",
+          "type": "html",
           "id": "text",
-          "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+          "default": "<h1><strong>鳥好き</strong>を<strong>かわいく</strong>自慢する</h1>",
           "label": "t:sections.image-with-text.blocks.text.settings.text.label"
         },
         {
