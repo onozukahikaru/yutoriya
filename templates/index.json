@@ -87,7 +87,7 @@
       "settings": {
         "title": "鳥の種類から選ぶ",
         "heading_size": "h1",
-        "description": "<p>やっぱり欲しいのは「うちの子」グッズ。色んな種類の鳥さんから、お気に入りの子を探してください♪<\/p>",
+        "description": "<p>やっぱり欲しいのは「うちの子」グッズ。<\/p><p>色んな種類の鳥さんから、お気に入りの子を探してください♪<\/p>",
         "image_ratio": "square",
         "columns_desktop": 4,
         "show_view_all": true,
