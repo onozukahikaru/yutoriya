@@ -102,7 +102,7 @@
       ],
       "settings": {
         "include_margins": true,
-        "class": "app_"
+        "class": "app_review__product"
       }
     },
     "product-recommendations": {
