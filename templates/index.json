@@ -107,7 +107,7 @@
         "template--15922127962277__d5ccae07-614e-4595-9872-aeadff8eac5f-1668482515cbb65dbd-1": {
           "type": "featured_collection",
           "settings": {
-            "collection": "hoodie"
+            "collection": "parka"
           }
         },
         "template--15922127962277__d5ccae07-614e-4595-9872-aeadff8eac5f-1668482515cbb65dbd-2": {
@@ -131,7 +131,7 @@
         "0d22a057-34a2-41e7-bad8-5fe6dd310a49": {
           "type": "featured_collection",
           "settings": {
-            "collection": "goods"
+            "collection": "zakka"
           }
         }
       },
