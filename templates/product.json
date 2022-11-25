@@ -91,8 +91,8 @@
         "ac2bc6be-76f9-4de0-86f1-156aee5ca844": {
           "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/top-rated\/a103faaf-2125-4b0e-89fa-de5149736723",
           "settings": {
-            "color_star": "#e22120",
-            "color_link": "#1878b9"
+            "color_star": "#f39800",
+            "color_link": "#000000"
           }
         }
       },
