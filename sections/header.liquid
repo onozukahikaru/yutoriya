@@ -227,9 +227,9 @@
             {%- if section.settings.logo != blank -%}
               {%- assign logo_alt = section.settings.logo.alt | default: shop.name | escape -%}
               {%- assign logo_height = section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio -%}
-              {{ section.settings.logo | image_url: width: section.settings.width | image_tag:
+              {{ section.settings.logo | image_url: width: 600 | image_tag:
                 class: 'header__heading-logo',
-                widths: '50, 100, 150, 200, 250, 300, 400, 500',
+                widths: '400, 500',
                 height: logo_height,
                 width: section.settings.logo_width,
                 alt: logo_alt
@@ -360,9 +360,9 @@
             {%- if section.settings.logo != blank -%}
               {%- assign logo_alt = section.settings.logo.alt | default: shop.name | escape -%}
               {%- assign logo_height = section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio -%}
-              {{ section.settings.logo | image_url: width: section.settings.width | image_tag:
+              {{ section.settings.logo | image_url: width: 600 | image_tag:
                 class: 'header__heading-logo',
-                widths: '50, 100, 150, 200, 250, 300, 400, 500',
+                widths: '400, 500',
                 height: logo_height,
                 width: section.settings.logo_width,
                 alt: logo_alt
@@ -534,6 +534,7 @@
                             <summary class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.child_active %} menu-drawer__menu-item--active{% endif %}">
                               {{ link.title | escape }}
                               <img src="{{ 'icon_menuplus.png' | asset_img_url: '50x' }}" class="menuplus">
+                              <img src="{{ 'icon_menuminus.png' | asset_img_url: '50x' }}" class="menuminus">
                               {% render 'icon-caret' %}
                             </summary>
                             <div id="link-{{ link.handle | escape }}" class="menu-drawer__submenu has-submenu gradient motion-reduce" tabindex="-1">

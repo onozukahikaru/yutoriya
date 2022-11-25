@@ -37,11 +37,11 @@
         <h2 id="SectionHeading-{{ section.id }}" class="blog__title {{ section.settings.heading_size }}">{{ section.settings.heading | escape }}</h2>
         <p class="subtitle">INFORMATION</p>
         {%- if section.settings.blog != blank and section.settings.show_view_all and section.settings.post_limit < section.settings.blog.articles_count -%}
-          <a href="{{ section.settings.blog.url }}"
+          {% comment %} <a href="{{ section.settings.blog.url }}"
             class="link underlined-link large-up-hide"
           >
             {{ 'sections.featured_blog.view_all' | t }}
-          </a>
+          </a> {% endcomment %}
         {%- endif -%}
       </div>
     {%- endunless -%}
@@ -56,14 +56,6 @@
             </li>
           {%- endfor -%}
         </ul>
-
-      {%- if section.settings.show_view_all and section.settings.post_limit < section.settings.blog.articles_count -%}
-        <div class="blog__view-all center small-hide medium-hide">
-          <a href="{{ section.settings.blog.url }}" id="ViewAll-{{ section.id }}" class="blog__button button" aria-labelledby="ViewAll-{{ section.id }} SectionHeading-{{ section.id }}">
-            {{ 'sections.featured_blog.view_all' | t }}
-          </a>
-        </div>
-      {%- endif -%}
     {%- else -%}
       <div class="blog-placeholder">
         <div class="placeholder media media--landscape">
@@ -80,6 +72,15 @@
       </div>
     {%- endif -%}
   </div>
+  {%- if section.settings.show_view_all and section.settings.post_limit < section.settings.blog.articles_count -%}
+  <div class="page-width">
+    <div class="blog__view-all center medium-hide">
+      <a href="{{ section.settings.blog.url }}" id="ViewAll-{{ section.id }}" class="blog__button button btn_arrow" aria-labelledby="ViewAll-{{ section.id }} SectionHeading-{{ section.id }}">
+        <span>{{ 'sections.featured_blog.view_all' | t }}</span>
+      </a>
+    </div>
+  </div>
+  {%- endif -%}
 </div>
 
 {% schema %}
