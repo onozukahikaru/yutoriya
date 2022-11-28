@@ -23,7 +23,8 @@
         "6f479357-5fe8-49f0-8b7d-895108eea732"
       ],
       "settings": {
-        "include_margins": true
+        "include_margins": true,
+        "class": "app_login"
       }
     }
   },
