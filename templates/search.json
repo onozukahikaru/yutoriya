@@ -10,7 +10,7 @@
         "show_rating": false,
         "enable_filtering": false,
         "filter_type": "horizontal",
-        "enable_sorting": true,
+        "enable_sorting": false,
         "article_show_date": false,
         "article_show_author": false,
         "columns_mobile": "2",
