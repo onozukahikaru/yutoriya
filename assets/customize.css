@@ -83,7 +83,7 @@ a.button--secondary,
 .activate button[name=decline], 
 .addresses li>button, 
 .addresses form button[type]{
-  color: black;
+  color: black!important;
 }
 button.button--secondary:after,
 a.button--secondary:after{
