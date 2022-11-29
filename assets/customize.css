@@ -79,14 +79,20 @@ span.icon-wrap img {
   background: #75957D;
 }
 button.button--secondary,
-a.button--secondary{
+a.button--secondary,
+.activate button[name=decline], 
+.addresses li>button, 
+.addresses form button[type]{
   color: black;
 }
 button.button--secondary:after,
 a.button--secondary:after{
   box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.3);
 }
-.button:not([disabled]).button--secondary:hover::after{
+.button:not([disabled]).button--secondary:hover::after,
+.activate button:hover::after, 
+.addresses li>button:hover::after, 
+.addresses form button:hover::after{
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(var(--color-button-text), var(--border-opacity)), 0 0 0 var(--buttons-border-width) rgba(var(--color-button), var(--alpha-button-background));
 }
 @media screen and (max-width: 768px){
