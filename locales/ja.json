@@ -198,8 +198,8 @@
       "products": "商品管理",
       "search_for": "「{{ terms }}」を検索",
       "results_with_count_and_term": {
-        "one": "「{{ terms }}」の検索結果{{ count }}件",
-        "other": "「{{ terms }}」の検索結果{{ count }}件"
+        "one": "「{{ terms }}」の検索結果 {{ count }}件",
+        "other": "「{{ terms }}」の検索結果 {{ count }}件"
       }
     },
     "cart": {

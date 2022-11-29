@@ -263,6 +263,9 @@ details[open] > .header__submenu a .menuarrow{
 .list-menu--disclosure{
   top: 44px;
 }
+.header__active-menu-item{
+  color: #EA9573;
+}
 @media screen and (max-width: 768px) {
   header.header{
     background: white;
@@ -1935,9 +1938,19 @@ footer .footer__localization:empty + .footer__column{
 
 
 /* 商品詳細ページ */
+.product .product__title{
+  font-size: 3rem;
+}
 .product__info-container .product-form,
 .product__info-container .product__description{
   line-height: 1.4;
+}
+.product .price--sold-out .price__availability, 
+.product .price__regular, 
+.product .price:not(.price--show-badge) .price-item--last:last-of-type{
+  border-top: none;
+  border-bottom: none;
+  font-size: 2rem;
 }
 @media screen and (min-width: 769px){
   .product-recommendations .card .card__badge{
@@ -1963,11 +1976,29 @@ footer .footer__localization:empty + .footer__column{
   outline: none;
   box-shadow: none;
 }
+.search .field__label{
+  display: none;
+}
+.search .field__input:focus, 
+.search .field__input:not(:placeholder-shown), 
+.search .field__input:-webkit-autofill, 
+.search .customer .field input:focus, 
+.search .customer .field input:not(:placeholder-shown), 
+.search .customer .field input:-webkit-autofill{
+  padding: 0.8rem 1.5rem 0.8rem 2rem;
+}
 .search-modal__content .search__button .icon{
   height: 2.5rem;
   width: 2.5rem;
 }
-cart-items .cart__warnings{
+.template-search .card__badge{
+  top: 0;
+  left: 0;
+}
+.template-search__header p{
+  text-align: left;
+}
+.cart-items .cart__warnings{
   padding: 3rem 0 8rem;
 }
 .main-page-title{
@@ -2112,6 +2143,18 @@ div[data-widget-style*=standard] .stamped-tab-container{
 /* アカウント */
 .customer{
   margin-bottom: 5rem;
+}
+.customer.order :is(.account,.order) h2{
+  font-size: 2rem;
+}
+.customer.order :is(.account,.order) p{
+  line-height: 1.5;
+}
+@media screen and (max-width: 768px){
+  .addresses form .sp_wide button{
+    max-width: none;
+    width: 100%;
+  }
 }
 @media screen and (min-width: 769px){
   .customer{

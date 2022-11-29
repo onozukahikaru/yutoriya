@@ -342,11 +342,6 @@
                   {%- endif -%}
                 </div>
               {%- endif -%}
-              {% for tag in product.tags %}
-                {% if tag contains "label_" %}
-                  <span class="label_tags">{{ tag | remove: "label_" }}</span>
-                {% endif %}
-              {% endfor %}
               <div {{ block.shopify_attributes }}>
                 {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
                 {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
