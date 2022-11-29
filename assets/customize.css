@@ -78,10 +78,12 @@ span.icon-wrap img {
 .cart__checkout-button.button:hover{
   background: #75957D;
 }
-.button--secondary{
+button.button--secondary,
+a.button--secondary{
   color: black;
 }
-.button--secondary:after{
+button.button--secondary:after,
+a.button--secondary:after{
   box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.3);
 }
 .button:not([disabled]).button--secondary:hover::after{
@@ -1408,6 +1410,18 @@ footer .footer__localization:empty + .footer__column{
 
 
 /* 商品 */
+.facets-container .facet-filters__label{
+  display: none;
+}
+.facets-container .facets__form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.facets-container .product-count__text{
+  font-size: 1.6rem;
+}
 .section-collection-yutoriya{
   background: #F4FFF4;
   padding-top: 10rem;
