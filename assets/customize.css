@@ -1995,8 +1995,8 @@ footer .footer__localization:empty + .footer__column{
   border-top: 1px solid #777;
   border-bottom: 1px solid #777;
 }
-#_ngc_stock_notice_btn{
-  height: 54px;
+.product #_ngc_stock_notice_btn{
+  height: 47px;
   font-size: 1.6rem;
   background-color: #EA9573;
   color: #FFFFFF;
