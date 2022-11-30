@@ -2053,10 +2053,20 @@ nav.stamped-reviews{
 }
 .stamped-messages .stamped-thank-you{
   border-radius: 10px;
+  padding: 30px 1rem;
 }
 .stamped-messages .stamped-thank-you p:first-child{
   margin-bottom: 1rem;
   color: #FF4040;
+}
+@media screen and (max-width: 768px){
+  .stamped-messages .stamped-share-links a{
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  .stamped-form-label+.stamped-form-input{
+    font-size: 16px;
+  }
 }
 @media screen and (min-width: 769px){
   .product-recommendations .card .card__badge{
@@ -2093,6 +2103,7 @@ nav.stamped-reviews{
   .stamped-messages .stamped-thank-you{
     max-width: 720px;
     margin: 1rem auto;
+    
   }
 }
 
