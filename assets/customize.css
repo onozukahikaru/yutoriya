@@ -1995,7 +1995,18 @@ footer .footer__localization:empty + .footer__column{
   border-top: 1px solid #777;
   border-bottom: 1px solid #777;
 }
-
+#_ngc_stock_notice_btn{
+  height: 54px;
+  font-size: 1.6rem;
+  background-color: #EA9573;
+  color: #FFFFFF;
+  border-radius: 40px;
+  border: 1px solid#FFFFFF;
+  width: 100%;
+}
+.cart__ctas button{
+  min-height: 54px;
+}
 @media screen and (min-width: 769px){
   .product-recommendations .card .card__badge{
     top: -110px;
@@ -2004,14 +2015,12 @@ footer .footer__localization:empty + .footer__column{
     flex-direction: column !important;
   }
   .cart__blocks .shopify-cleanslate ul li{
-    flex-basis: 47px !important;
+    flex-basis: 54px !important;
   }
   .cart__blocks .shopify-cleanslate ul li div{
     height: 54px !important;
   }
-  .cart__ctas button{
-    min-height: 54px;
-  }
+  
 }
 
 
