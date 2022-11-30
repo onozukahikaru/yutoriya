@@ -105,7 +105,7 @@
     "show_vendor": false,
     "show_cart_note": false,
     "checkout_logo_image": "shopify:\/\/shop_images\/logo_yutoriya.png",
-    "checkout_sidebar_background_color": "#ffebe3",
+    "checkout_sidebar_background_color": "#fffbf4",
     "checkout_accent_color": "#ea9573",
     "checkout_button_color": "#f39800",
     "sections": {
