@@ -2051,6 +2051,13 @@ nav.stamped-reviews{
 .product-recommendations .badge.sale{
   left: -45px;
 }
+.stamped-messages .stamped-thank-you{
+  border-radius: 10px;
+}
+.stamped-messages .stamped-thank-you p:first-child{
+  margin-bottom: 1rem;
+  color: #FF4040;
+}
 @media screen and (min-width: 769px){
   .product-recommendations .card .card__badge{
     top: -110px;
@@ -2082,6 +2089,10 @@ nav.stamped-reviews{
   #stamped-reviews-widget[data-widget-type="top-rated"] .stamped-ratings-wrapper:hover .stamped-style-color-link{
     color: #EA9573!important;
     text-decoration: underline;
+  }
+  .stamped-messages .stamped-thank-you{
+    max-width: 720px;
+    margin: 1rem auto;
   }
 }
 
