@@ -2000,10 +2000,13 @@ footer .footer__localization:empty + .footer__column{
   .product-recommendations .card .card__badge{
     top: -110px;
   }
-  .shopify-cleanslate ul{
+  .cart__blocks .shopify-cleanslate ul{
     flex-direction: column !important;
   }
-  .shopify-cleanslate ul li div{
+  .cart__blocks .shopify-cleanslate ul li{
+    flex-basis: 47px !important;
+  }
+  .cart__blocks .shopify-cleanslate ul li div{
     height: 54px !important;
   }
   .cart__ctas button{
