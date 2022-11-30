@@ -2022,6 +2022,14 @@ footer .footer__localization:empty + .footer__column{
   border: 1px solid#FFFFFF;
   width: 100%;
 }
+.ngc__modal__smsEmail{
+  justify-content: space-evenly;
+}
+.ngc__modal__smsEmail .ngc__modal__btnEmail, 
+.ngc__modal__smsEmail .ngc__modal__btnSMS, 
+.ngc__modal__smsEmail .ngc__modal__btnLINE{
+  width: 48%;
+}
 .cart__ctas button{
   min-height: 54px;
 }
@@ -2030,6 +2038,18 @@ footer .footer__localization:empty + .footer__column{
 }
 .ngc__modal__inner button.ngc__modal__btn-submit__email{
   background: #EA9573;
+  margin-bottom: 1rem;
+}
+.stamped-pagination a{
+  color: black;
+}
+.stamped-reviews-nav, 
+.stamped-reviews-ul, 
+nav.stamped-reviews{
+  margin-top: 2rem!important;
+}
+.product-recommendations .badge.sale{
+  left: -45px;
 }
 @media screen and (min-width: 769px){
   .product-recommendations .card .card__badge{
@@ -2050,7 +2070,19 @@ footer .footer__localization:empty + .footer__column{
   .cart__blocks .shopify-cleanslate ul li div{
     height: 54px !important;
   }
-  
+  .product-recommendations .badge.sale{
+    left: -95px;
+  }
+  .stamped-container .new-review-form.stamped-visible{
+    border: 1px solid rgba(221, 221, 221, 0.3)!important;
+    padding: 15px;
+    max-width: 720px;
+    margin: 1rem auto!important;
+  }
+  #stamped-reviews-widget[data-widget-type="top-rated"] .stamped-ratings-wrapper:hover .stamped-style-color-link{
+    color: #EA9573!important;
+    text-decoration: underline;
+  }
 }
 
 
