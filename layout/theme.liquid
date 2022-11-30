@@ -219,7 +219,6 @@
     {% endstyle %}
     {{ 'reset.css' | asset_url | stylesheet_tag }}
     {{ 'base.css' | asset_url | stylesheet_tag }}
-    {{ 'customize.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
@@ -231,7 +230,7 @@
     {%- if settings.predictive_search_enabled -%}
       <link rel="stylesheet" href="{{ 'component-predictive-search.css' | asset_url }}" media="print" onload="this.media='all'">
     {%- endif -%}
-
+    {{ 'customize.css' | asset_url | stylesheet_tag }}
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
     if (Shopify.designMode) {
       document.documentElement.classList.add('shopify-design-mode');
@@ -255,10 +254,15 @@
 
     {% section 'announcement-bar' %}
     {% section 'header' %}
-    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
-      {{ content_for_layout }}
-    </main>
-
+    {% if collection.url == '/collections/ranking' %}
+      <main id="MainContent" class="content-for-layout focus-none page_ranking" role="main" tabindex="-1">
+        {{ content_for_layout }}
+      </main>
+    {% else %}
+      <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+        {{ content_for_layout }}
+      </main>
+    {% endif %}
     {% section 'footer' %}
 
     <ul hidden>
