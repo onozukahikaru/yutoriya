@@ -2068,6 +2068,17 @@ nav.stamped-reviews{
   .stamped-form-input-textarea{
     font-size: 16px;
   }
+  #stamped-reviews-widget[data-widget-type="top-rated"] .stamped-top-rated-buttons{
+    float: none!important;
+    width: 100%!important;
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    z-index: 2;
+  }
 }
 @media screen and (min-width: 769px){
   .product-recommendations .card .card__badge{
