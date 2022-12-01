@@ -2338,6 +2338,9 @@ select#stamped-sort-select{
 #stamped-button-submit, 
 input.stamped-button.stamped-button-primary.button.button-primary.btn.btn-primary{
   background: #93BA9D;
+  display: block;
+  width: 100%;
+  margin: auto;
 }
 div[data-widget-style*=standard] .stamped-tab-container{
   margin-bottom: 2rem;
@@ -2376,6 +2379,11 @@ div[data-widget-style*=standard] .stamped-tab-container{
 }
 #reviewRating{
   display: none;
+}
+@media screen and (min-width: 769px){
+  input.stamped-button.stamped-button-primary.button.button-primary.btn.btn-primary{
+    max-width: 200px;
+  }
 }
 
 /* アカウント */
