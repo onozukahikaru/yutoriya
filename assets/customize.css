@@ -1165,12 +1165,13 @@ footer .footer__localization:empty + .footer__column{
     padding-bottom: 10rem;
   }
   .section_ranking .collection__title h2.title{
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     letter-spacing: 2px;
   }
   .section_ranking .collection__title::before{
     width: 180px;
     height: 180px;
+    top: 33%;
   }
   .section_ranking .ranking_list::before{
     width: 490px;
@@ -1312,7 +1313,7 @@ footer .footer__localization:empty + .footer__column{
     padding-bottom: 13rem;
   }
   .section_recommend .collection__title h2.title{
-    font-size: 2.7rem;
+    font-size: 2.8rem;
     letter-spacing: 4px;
   }
   .section_recommend .collection__title::before{
@@ -1480,13 +1481,14 @@ footer .footer__localization:empty + .footer__column{
   .section-collection-bird{
     padding-top: 14rem;
     padding-bottom: 9rem;
+    z-index: 2;
   }
   .section-collection-bird h2.collection-list-title{
-    font-size: 2.7rem;
+    font-size: 2.8rem;
     letter-spacing: 4px;
   }
   .section-collection-bird h2.collection-list-title::before{
-    top: 10%;
+    top: 30%;
     width: 230px;
     height: 200px;
   }
@@ -1584,7 +1586,7 @@ footer .footer__localization:empty + .footer__column{
     padding-bottom: 12rem;
   }
   .section-collection-yutoriya h2.collection-list-title{
-    font-size: 2.7rem;
+    font-size: 2.8rem;
     letter-spacing: 4px;
   }
   .section-collection-yutoriya .title-wrapper-with-link{
@@ -1708,7 +1710,7 @@ footer .footer__localization:empty + .footer__column{
     height: 460px;
   }
   .section_about .rich-text__heading{
-    font-size: 2.7rem;
+    font-size: 2.8rem;
     letter-spacing: 4px;
   }
   .section_about .rich-text__text{
@@ -1912,7 +1914,7 @@ footer .footer__localization:empty + .footer__column{
     padding-bottom: 10rem;
   }
   #insta-feed h2{
-    font-size: 2.7rem!important;
+    font-size: 2.8rem!important;
     letter-spacing: 4px;
     margin-bottom: 10rem!important;
   }
