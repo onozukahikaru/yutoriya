@@ -217,7 +217,7 @@
           "settings": {
             "heading_size": 20,
             "feed_width": 100,
-            "html_area": "<script src=\"https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/3.6.0\/jquery.min.js\"><\/script>\n<script>$(function () {\n  $(\"#insta-feed h2\").on(\"click\", function () {\n    console.log(\"click\");\n    window.location.href = \"https:\/\/www.instagram.com\/yutoriya1115\/\";\n  });\n});<\/script>"
+            "html_area": "<script>$(function () {\n  $(\"#insta-feed h2\").on(\"click\", function () {\n    console.log(\"click\");\n    window.location.href = \"https:\/\/www.instagram.com\/yutoriya1115\/\";\n  });\n});<\/script>"
           }
         }
       },
