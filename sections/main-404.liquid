@@ -11,9 +11,10 @@
 </style>
 
 <div class="template-404 page-width page-margin center">
-  <p>
+  <img src="{{ 'bird-b-2.png' | asset_img_url: '500x' }}" class="page_404" alt="404">
+  {% comment %} <p>
     {{ 'templates.404.subtext' | t }}
-  </p>
+  </p> {% endcomment %}
   <h1 class="title">
     {{ 'templates.404.title' | t }}
   </h1>

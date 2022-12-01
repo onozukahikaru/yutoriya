@@ -17,6 +17,9 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5{
 a:hover{
   opacity: 0.7;
 }
+::selection{
+  background-color: transparent;
+}
 .underline-links-hover:hover .card__heading a{
   color: #EA9573;
 }
@@ -2242,6 +2245,9 @@ nav.stamped-reviews{
   max-width: 35px;
   max-height: 35px;
   top: -15px;
+}
+.template-404 .page_404{
+  max-width: 200px;
 }
 @media screen and (max-width: 768px){
   .rte table tr{
