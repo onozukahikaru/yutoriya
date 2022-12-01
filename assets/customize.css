@@ -2059,6 +2059,9 @@ nav.stamped-reviews{
   margin-bottom: 1rem;
   color: #FF4040;
 }
+#wishlist_icon.fa-heart{
+  color: #EA9573;
+}
 @media screen and (max-width: 768px){
   .stamped-messages .stamped-share-links a{
     margin: 0;

@@ -238,6 +238,14 @@
     </script>
   {% render 'weglot_hreftags' %}
 {% render 'weglot_switcher' %}
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L7ZHP267LL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-L7ZHP267LL');
+  </script>
 </head>
 {%- if template == 'index' -%}
   <body class="gradient homepage">
