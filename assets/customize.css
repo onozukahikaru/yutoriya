@@ -1900,6 +1900,7 @@ footer .footer__localization:empty + .footer__column{
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
+  z-index: 1;
 }
 #insta-feed a:nth-child(n + 10) , 
   .instafeed-shopify a:nth-child(n + 10) {
@@ -1932,7 +1933,6 @@ footer .footer__localization:empty + .footer__column{
     top: -160px;
     left: auto;
     right: -100px;
-    z-index: 0;
   }
   #insta-feed .instafeed-container, 
   .instafeed-shopify .instafeed-container{
