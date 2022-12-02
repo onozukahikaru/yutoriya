@@ -13,8 +13,8 @@
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
-    <link rel="apple-touch-icon" type="image/png" href="{{ 'appleicon.png' | image_url: '180x180' }}">
-    <link rel="icon" type="image/png" href="{{ 'appleicon.png' | image_url: '192x192' }}">
+    <link rel="apple-touch-icon" type="image/png" href="{{ 'appleicon.png' | asset_url: '180x180' }}">
+    <link rel="icon" type="image/png" href="{{ 'appleicon.png' | asset_url: '192x192' }}">
 
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>

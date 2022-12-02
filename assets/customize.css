@@ -2258,7 +2258,9 @@ nav.stamped-reviews{
   .rte table td.column-1{
     background: #f1f1f1;
   }
-
+  .search-modal{
+    height: 130px;
+  }
 }
 @media screen and (min-width: 769px){
   cart-items .cart__warnings{
