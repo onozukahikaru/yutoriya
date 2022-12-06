@@ -111,6 +111,9 @@ a.button--secondary:after{
   footer.footer{
     padding-bottom: 0;
   }
+  .pages_other .collection .badge.sale{
+    left: -45px;
+  }
 }
 @media screen and (min-width: 769px){
   .collection-list .card__information a{
@@ -1056,6 +1059,9 @@ footer .footer__localization:empty + .footer__column{
   }
   .collection__description p br{
     display: none;
+  }
+  .shopify-section .collection .grid__item:only-child{
+    max-width: 50%;
   }
 }
 @media screen and (min-width: 769px){
