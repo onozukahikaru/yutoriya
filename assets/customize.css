@@ -1192,10 +1192,12 @@ footer .footer__localization:empty + .footer__column{
     align-items: flex-start;
   }
   .section_ranking .collection__view-all .btn_arrow{
-    margin-top: 9rem;
-    padding: 1.5rem 0rem;
+    margin-top: 8rem;
+    padding: 1.4rem 2rem 1.4rem 0.5rem;
     width: 90%;
     margin-left: auto;
+    line-height: 1.4em;
+    border-radius: 100px;
   }
 }
 @media screen and (min-width: 769px){
