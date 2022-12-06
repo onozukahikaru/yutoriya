@@ -31,10 +31,21 @@
                 });
             }
         }else{ 
-            $(".smoothscroll-top").css({
-                "position":"fixed",
-                "bottom": "50px",
-            });
+            const scrollHeight = $(document).height();
+            const scrollPosition = $(window).height() + $(window).scrollTop();
+            const footHeight = $("footer").height();
+
+            if ( scrollHeight - scrollPosition  <= footHeight ) {
+                $(".smoothscroll-top").css({
+                    "position":"absolute",
+                    "bottom": "193px",
+                });
+            } else {
+                $(".smoothscroll-top").css({
+                    "position":"fixed",
+                    "bottom": "50px",
+                });
+            }
         }
       });
       $('.smoothscroll-top').click(function(){
