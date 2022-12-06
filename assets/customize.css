@@ -1,12 +1,8 @@
 /* basic */
-*{
-  user-select: auto !important;
-  -webkit-user-select: auto !important;
-  -webkit-user-drag: auto !important;
-}
+
 html, 
 body{
-  font-family:"Helvetica Neue",　YuGothic, 'Noto Sans JP', sans-serif;
+  font-family:"Helvetica Neue", YuGothic, 'Noto Sans JP', sans-serif;
   overflow-x: hidden;
   letter-spacing: 1px;
 }
@@ -14,7 +10,7 @@ body.homepage{
   background: #FFFBF4;
 }
 h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5{
-  font-family: "Helvetica Neue",　YuGothic, 'Noto Sans JP', sans-serif;
+  font-family: "Helvetica Neue", YuGothic, 'Noto Sans JP', sans-serif;
 }
 .icon.icon-close{
   fill: black;
@@ -22,9 +18,9 @@ h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5{
 a:hover{
   opacity: 0.7;
 }
-::selection{
+/* ::selection{
   background-color: transparent;
-}
+} */
 .underline-links-hover:hover .card__heading a{
   color: #EA9573;
 }
@@ -1069,9 +1065,6 @@ footer .footer__localization:empty + .footer__column{
   }
   .badge.sale{
     font-size: 1.5rem;
-  }
-  .card .card__badge{
-    
   }
 }
 
