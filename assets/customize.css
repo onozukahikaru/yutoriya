@@ -2413,3 +2413,18 @@ div[data-widget-style*=standard] .stamped-tab-container{
     margin-bottom: 8rem;
   }
 }
+
+
+/* お問合せ */
+.pages_contact .content-for-layout{
+  margin-bottom: 65px;
+}
+.pages_contact h1{
+  margin-bottom: 0;
+}
+.pages_contact .text-area{
+  min-height: 20rem;
+}
+.pages_contact .contact__button .button{
+  width: 100%;
+}
