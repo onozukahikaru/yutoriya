@@ -937,6 +937,10 @@ footer .footer__localization:empty + .footer__column{
 .shopify-section .card__media .media img{
   object-fit: contain;
 }
+.card-information .price--on-sale .price-item--regular{
+  margin-bottom: 0.5rem;
+  color: #888;
+}
 .price--sold-out .price__availability, 
 .price__regular,
 .price:not(.price--show-badge) .price-item--last:last-of-type{
