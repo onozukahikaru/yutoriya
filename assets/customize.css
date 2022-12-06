@@ -28,10 +28,11 @@ a:hover{
   color: white;
   font-size: 1.2rem;
   font-weight: 600;
-  padding: 6px 10px;
+  padding: 6px 10px 6px 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 100%;
 }
 .collection-list__item a:hover{
   background: #935B6B;
@@ -111,7 +112,7 @@ a.button--secondary:after{
   .collection-list .card__information a{
     font-size: 1.8rem;
     font-weight: 500;
-    padding: 9px 10px;
+    padding: 9px 10px 9px 15px;
   }
   .collection-list .card__information a .icon-wrap{
     width: 20px;
@@ -397,13 +398,16 @@ details[open] > .header__submenu a .menuarrow{
     background: #FFF8F5;
     border: none;
   }
+  #menu-drawer .menu-drawer__submenu .menu-drawer__menu{
+    margin-bottom: 1rem;
+  }
   #menu-drawer .menu-drawer__inner-submenu .menu-drawer__menu > li{
     border-bottom: none;
   }
   #menu-drawer .menu-drawer__inner-submenu .menu-drawer__menu > li a{
     font-weight: 400;
     font-size: 1.5rem;
-    padding: 0.5rem 0 0.5rem 4rem;
+    padding: 0.5rem 0 0.5rem 2rem;
   }
   .has-submenu details[open] .menuplus{
     display: none;
@@ -461,6 +465,18 @@ details[open] > .header__submenu a .menuarrow{
     position: relative;
     padding-left: 20px;
     font-size: 1.3rem;
+  }
+  .header__inline-menu li .header__submenu li a{
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 1.5rem 0.5rem 1rem 1.5rem;
+  }
+  .header__inline-menu li .header__submenu li a .menuarrow{
+    display: block;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    right: 5px;
   }
   .header__inline-menu li > .list-menu__item::before,
   summary.header__menu-item.list-menu__item.link.focus-inset::before{
@@ -1157,10 +1173,10 @@ footer .footer__localization:empty + .footer__column{
     width: 49%;
     text-align: left;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
   }
   .section_ranking .collection__view-all .btn_arrow{
-    margin-top: 0;
+    margin-top: 9rem;
     padding: 1.5rem 0rem;
     width: 90%;
     margin-left: auto;
@@ -1374,7 +1390,7 @@ footer .footer__localization:empty + .footer__column{
 .section_recommend .slider-button{
   width: 50px;
   height: 50px;
-  top: 58%;
+  top: 55%;
   display: block;
 }
 .swiper.r-swiper{
@@ -1586,6 +1602,9 @@ footer .footer__localization:empty + .footer__column{
   }
   .shopify-section.section-collection-yutoriya .grid__item{
     padding: 1rem 0.5rem;
+  }
+  .shopify-section.section-collection-yutoriya .card__heading:last-child{
+    height: 100%;
   }
 }
 @media screen and (min-width: 769px){
