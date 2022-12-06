@@ -1037,6 +1037,14 @@ footer .footer__localization:empty + .footer__column{
 .price--on-sale .price-item--regular{
   margin-bottom: 0.5rem;
 }
+.article-card__info,
+.date_blog{
+  display: block;
+  font-family: Noto Sans JP;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  padding: 0;
+}
 @media screen and (max-width: 768px){
   .collection__description p{
     text-align: left;
@@ -2216,11 +2224,26 @@ nav.stamped-reviews{
   line-height: 1.5;
 }
 .wrap_document h2{
-  margin-bottom: 2rem;
+  margin: 30px 0 20px 0;
   font-size: 2rem;
 }
 .wrap_document p, ol{
   margin-bottom: 2.5rem;
+}
+.wrap_document ol{
+  margin: 20px 0 0 20px;
+}
+.wrap_document ol li{
+  list-style: outside decimal;
+  font-size: 0.95em;
+  line-height: 140%;
+  margin: 10px 0 0 0;
+}
+.wrap_document ol li ol{
+  margin-bottom: 20px;
+}
+.wrap_document ol li ol li{
+  font-size: 100%;
 }
 .page_ranking .collection{
   margin-top: 5rem;
@@ -2286,7 +2309,7 @@ nav.stamped-reviews{
   }
 }
 @media screen and (min-width: 769px){
-  cart-items .cart__warnings{
+  .cart-items .cart__warnings{
     padding: 7rem 0;
   }
   .main-page-title{
@@ -2309,6 +2332,9 @@ nav.stamped-reviews{
   }
   .rte table td.column-2{
     width: 65%;
+  }
+  .wrap_document ol{
+    margin: 20px 0 0 40px;
   }
   .page_ranking .shopify-section .grid__item {
     padding-top: 5rem;
