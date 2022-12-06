@@ -2,41 +2,45 @@
 <div class="smoothscroll-top"></div>
 
 <script>
-$(function(){
-  $(window).on("scroll", function() {
-    if ($(this).scrollTop() > 100) {
-        $(".smoothscroll-top").fadeIn(500);
-        } else {
+    $(function(){
+        var timer;
+      $(window).on("scroll", function() {
         $(".smoothscroll-top").fadeOut(500);
-    }
-
-    if(window.matchMedia("(min-width: 769px)").matches){
-        const scrollHeight = $(document).height();
-        const scrollPosition = $(window).height() + $(window).scrollTop();
-        const footHeight = $("footer").height();
-
-        if ( scrollHeight - scrollPosition  <= footHeight ) {
-            $(".smoothscroll-top").css({
-                "position":"absolute",
-                "bottom": 100 + footHeight,
-            });
-        } else {
+            clearTimeout(timer);
+            timer = setTimeout(function() {
+            if($(this).scrollTop()){
+                $(".smoothscroll-top").fadeIn(500);
+                } else {
+                $(".smoothscroll-top").fadeOut(500);
+            }
+        }, 200);
+        if(window.matchMedia("(min-width: 769px)").matches){
+            const scrollHeight = $(document).height();
+            const scrollPosition = $(window).height() + $(window).scrollTop();
+            const footHeight = $("footer").height();
+    
+            if ( scrollHeight - scrollPosition  <= footHeight ) {
+                $(".smoothscroll-top").css({
+                    "position":"absolute",
+                    "bottom": 100 + footHeight,
+                });
+            } else {
+                $(".smoothscroll-top").css({
+                    "position":"fixed",
+                    "bottom": "50px",
+                });
+            }
+        }else{ 
             $(".smoothscroll-top").css({
                 "position":"fixed",
                 "bottom": "50px",
             });
         }
-    }else{ 
-        $(".smoothscroll-top").css({
-            "position":"fixed",
-            "bottom": "50px",
-        });
-    }
-  });
-  $('.smoothscroll-top').click(function(){
-  var speed = 800;
-  $("html, body").animate({scrollTop:0}, speed, "swing");
-  return false;
-  });
-});
+      });
+      $('.smoothscroll-top').click(function(){
+        var speed = 800;
+        $("html, body").animate({scrollTop:0}, speed, "swing");
+        return false;
+      });
+    });
 </script>

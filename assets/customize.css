@@ -2422,6 +2422,9 @@ div[data-widget-style*=standard] .stamped-tab-container{
 .pages_contact h1{
   margin-bottom: 0;
 }
+.pages_contact .form__message{
+  margin-top: 0;
+}
 .pages_contact .text-area{
   min-height: 20rem;
 }
