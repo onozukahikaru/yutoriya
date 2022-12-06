@@ -1,4 +1,9 @@
 /* basic */
+*{
+  user-select: auto !important;
+  -webkit-user-select: auto !important;
+  -webkit-user-drag: auto !important;
+}
 html, 
 body{
   font-family:"Helvetica Neue",　YuGothic, 'Noto Sans JP', sans-serif;
@@ -106,6 +111,9 @@ a.button--secondary:after{
 @media screen and (max-width: 768px){
   .page-width{
     padding: 0 2rem;
+  }
+  footer.footer{
+    padding-bottom: 0;
   }
 }
 @media screen and (min-width: 769px){
@@ -2244,6 +2252,12 @@ nav.stamped-reviews{
 }
 .wrap_document ol li ol li{
   font-size: 100%;
+}
+.wrap_document .tR{
+  margin: 30px 0 0 0;
+  font-size: 0.95em;
+  line-height: 140%;
+  text-align: right;
 }
 .page_ranking .collection{
   margin-top: 5rem;
