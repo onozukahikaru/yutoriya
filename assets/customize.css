@@ -2124,6 +2124,16 @@ nav.stamped-reviews{
 #wishlist_icon.fa-heart{
   color: #EA9573;
 }
+div#bookmarkit.swpbutton2{
+	font-size: inherit;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 440px;
+    border-radius: 40px;
+}
+div#bookmarkit.swpbutton2:hover{
+  border: 1px solid #EA9573;
+}
 .product__info-container .price--on-sale .price-item--regular{
   color: #888;
   margin-bottom: 1rem;
