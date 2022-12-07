@@ -2190,8 +2190,9 @@ nav.stamped-reviews{
   .product-recommendations .badge.sale{
     left: -95px;
   }
-  .stamped-container .new-review-form.stamped-visible{
+  .shopify-app-block .stamped-container .new-review-form.stamped-visible{
     border: 1px solid rgba(221, 221, 221, 0.3)!important;
+    border-top: 1px solid rgba(221, 221, 221, 0.3)!important;
     padding: 15px;
     max-width: 720px;
     margin: 1rem auto!important;
@@ -2212,7 +2213,11 @@ nav.stamped-reviews{
     float: left!important;
   }
 }
-
+.shopify-app-block div[data-count="0"] .stamped-content form, 
+.shopify-app-block div[data-widget-style][data-count="0"] .new-review-form, 
+.shopify-app-block div[data-widget-style][data-count="0"] .stamped-content form{
+  border-top: 1px solid rgba(221, 221, 221, 0.3)!important;
+}
 
 /* 下層ページ */
 .product-recommendations__heading{
