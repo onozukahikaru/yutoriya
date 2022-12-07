@@ -228,6 +228,25 @@
         "include_margins": true,
         "class": "app_instagram"
       }
+    },
+    "1670373733f8984610": {
+      "type": "apps",
+      "blocks": {
+        "b19f6ea2-d446-4c5d-9485-44fcb8796b79": {
+          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/top-rated\/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "color_star": "",
+            "color_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "b19f6ea2-d446-4c5d-9485-44fcb8796b79"
+      ],
+      "settings": {
+        "include_margins": true,
+        "class": "app_"
+      }
     }
   },
   "order": [
@@ -238,6 +257,7 @@
     "d5ccae07-614e-4595-9872-aeadff8eac5f",
     "deb9f57d-c06b-467b-8c87-2b582d70dfbf",
     "ed4ed50b-a474-4da5-8a1c-81ec7e87a33c",
-    "16645065979b67d39f"
+    "16645065979b67d39f",
+    "1670373733f8984610"
   ]
 }
