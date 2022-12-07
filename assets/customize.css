@@ -105,8 +105,11 @@ a.button--secondary:after{
   margin-top: 50px;
 }
 @media screen and (max-width: 768px){
-  .page-width{
+  .section_about .rich-text__text{
     padding: 0 2rem;
+  }
+  .page-width{
+    padding: 0;
   }
   footer.footer{
     padding-bottom: 0;
@@ -2180,6 +2183,17 @@ div#bookmarkit.swpbutton2:hover{
   .shopify-app-block .stamped-review-footer .stamped-review-vote{
     float: none!important;
   }
+}
+.shopify-payment-button__button--unbranded:focus:not(:focus-visible):not(.focused), 
+.shopify-payment-button [role=button]:focus:not(:focus-visible):not(.focused),
+.shopify-payment-button__button{
+  background: #F39800;
+  border-color: #F39800;
+  border-radius: 40px;
+  font-weight: 500;
+}
+.shopify-payment-button__button--unbranded:after{
+  box-shadow:rgba(221, 221, 221, 0.3);
 }
 @media screen and (min-width: 769px){
   .product-recommendations .card .card__badge{
