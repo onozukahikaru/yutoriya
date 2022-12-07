@@ -975,6 +975,19 @@ footer .footer__localization:empty + .footer__column{
   width: 100%;
   padding: 0.5rem 0;
 }
+.price .price__sale .price-item{
+  display: block;
+}
+.price--on-sale .price__sale{
+  flex-direction: column;
+}
+.price .price__container{
+  display: flex;
+}
+fieldset.product-form__input .form__label,
+.product-form__quantity-top .form__label{
+  font-weight: 600;
+}
 .collection__description{
   margin-bottom: 2rem;
 }
@@ -2019,6 +2032,11 @@ footer .footer__localization:empty + .footer__column{
 
 
 /* 商品詳細ページ */
+.product__media-toggle,
+.product__modal-opener .product__media-icon {
+  display: none !important;
+}
+
 .product .product__title{
   font-size: 3rem;
 }
@@ -2102,10 +2120,23 @@ nav.stamped-reviews{
 }
 .stamped-messages .stamped-thank-you p:first-child{
   margin-bottom: 1rem;
-  color: #FF4040;
 }
 #wishlist_icon.fa-heart{
   color: #EA9573;
+}
+.product__info-container .price--on-sale .price-item--regular{
+  color: #888;
+  margin-bottom: 1rem;
+}
+.shopify-app-block #stamped-reviews-widget[data-widget-type="top-rated"] .stamped-top-rated-title{
+  display: block;
+  font-weight: 500;
+  font-size: 2rem;
+  font-family: "Helvetica Neue", YuGothic, 'Noto Sans JP', sans-serif;
+  margin-bottom: 4rem;
+}
+.shopify-app-block #stamped-reviews-widget[data-widget-type="top-rated"] .stamped-top-rated-title:empty:before{
+  content: "最高評価";
 }
 @media screen and (max-width: 768px){
   .stamped-messages .stamped-share-links a{
@@ -2127,6 +2158,18 @@ nav.stamped-reviews{
     -ms-transform: translateY(-50%);
     z-index: 2;
   }
+  .shopify-app-block #stamped-reviews-widget[data-widget-type="top-rated"]{
+    width: 100%;
+  }
+  .shopify-app-block #stamped-main-widget[data-dir=rtl] .stamped-form-input.stamped-starrating, 
+  .shopify-app-block #stamped-main-widget[data-dir=rtl] .stamped-review-header #stamped-review-avatar,
+  .shopify-app-block #stamped-main-widget[data-dir=rtl] .stamped-review-header .stamped-review-avatar, 
+  .shopify-app-block #stamped-main-widget[data-dir=rtl] .stamped-review-reply #stamped-review-avatar, 
+  .shopify-app-block #stamped-main-widget[data-dir=rtl] .stamped-review-reply .stamped-review-avatar, 
+  .shopify-app-block .stamped-review-footer #stamped-review-vote, 
+  .shopify-app-block .stamped-review-footer .stamped-review-vote{
+    float: none!important;
+  }
 }
 @media screen and (min-width: 769px){
   .product-recommendations .card .card__badge{
@@ -2134,9 +2177,6 @@ nav.stamped-reviews{
   }
   .product .price s.price-item span {
       font-size: 1.6rem!important;
-  }
-  .product__info-container .price--on-sale .price-item--regular{
-    color: #888;
   }
   .cart__blocks .shopify-cleanslate ul{
     flex-direction: column !important;
@@ -2165,10 +2205,19 @@ nav.stamped-reviews{
     margin: 1rem auto;
     
   }
+  .shopify-app-block #stamped-reviews-widget[data-widget-type="top-rated"] .stamped-top-rated-title{
+    font-size: 2.4rem;
+  }
+  .shopify-app-block [data-version="2"] .stamped-summary-caption{
+    float: left!important;
+  }
 }
 
 
 /* 下層ページ */
+.product-recommendations__heading{
+  font-weight: 500;
+}
 .facets-container .facet-filters__label{
   display: none;
 }
@@ -2382,7 +2431,6 @@ nav.stamped-reviews{
   border-radius: 10px;
 }
 .stamped-content .new-review-form label{
-  color: #FF4040;
   font-weight: 600;
   margin-bottom: 1rem;
   display: block;
@@ -2461,6 +2509,9 @@ div[data-widget-style*=standard] .stamped-tab-container{
 }
 .customer.order :is(.account,.order) p{
   line-height: 1.5;
+}
+.btn_wide{
+  width: 100%;
 }
 @media screen and (max-width: 768px){
   .addresses form .sp_wide button{
