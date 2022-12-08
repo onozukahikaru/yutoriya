@@ -2633,8 +2633,9 @@ div[data-widget-style*=standard] .stamped-tab-container{
     width: 60%;
     margin: auto;
   }
-  .customer .btn_account_logout{{
+  .customer .btn_account_logout{
     margin: 2rem auto 2rem;
+    text-align: center;
   }
 }
 
