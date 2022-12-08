@@ -1041,6 +1041,10 @@ fieldset.product-form__input .form__label,
   position: absolute;
   left: -90px;
 }
+.badge.soldout{
+  background: #ccc;
+  color: #555;
+}
 .card:hover .media.media--hover-effect > img:first-child:only-child, 
 .card-wrapper:hover .media.media--hover-effect > img:first-child:only-child{
   transform: scale(1)!important;
@@ -2118,7 +2122,9 @@ fieldset.product-form__input .form__label,
   color: #FFFFFF;
   border-radius: 40px;
   border: 1px solid#FFFFFF;
-  width: 100%;
+  width: 100%!important;
+  max-width: 440px;
+  margin: 0;
 }
 .ngc__modal__smsEmail{
   justify-content: space-evenly;
@@ -2217,14 +2223,14 @@ div#bookmarkit.swpbutton2:hover{
     float: none!important;
   }
 }
-.shopify-payment-button__button--unbranded:focus:not(:focus-visible):not(.focused), 
+/* .shopify-payment-button__button--unbranded:focus:not(:focus-visible):not(.focused), 
 .shopify-payment-button [role=button]:focus:not(:focus-visible):not(.focused),
 .shopify-payment-button__button{
   background: #F39800;
   border-color: #F39800;
   border-radius: 40px;
   font-weight: 500;
-}
+} */
 .shopify-payment-button__button--unbranded:after{
   box-shadow:rgba(221, 221, 221, 0.3);
 }
