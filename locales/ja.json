@@ -303,12 +303,12 @@
   },
   "customer": {
     "account": {
-      "title": "アカウント",
-      "details": "アカウントの詳細",
+      "title": "マイページ",
+      "details": "マイページ詳細",
       "view_addresses": "住所を確認",
-      "return": "アカウントの詳細に戻る"
+      "return": "マイページの詳細に戻る"
     },
-    "account_fallback": "アカウント",
+    "account_fallback": "マイページ",
     "activate_account": {
       "title": "アカウントを有効にする",
       "subtext": "パスワードを作成してアカウントを有効にしてください。",
