@@ -997,7 +997,7 @@ footer .footer__localization:empty + .footer__column{
 .product .price-item.price-item--regular,
 .price-item--sale.price-item--last{
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 2.8rem;
 }
 fieldset.product-form__input .form__label,
 .product-form__quantity-top .form__label{
