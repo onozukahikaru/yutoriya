@@ -259,6 +259,7 @@ details[open] > .header__submenu{
   width: auto;
   background: transparent;
   padding: 0;
+  min-width: 200px;
 }
 details[open] > .header__submenu li{
   background: white;
@@ -1045,6 +1046,7 @@ fieldset.product-form__input .form__label,
   background: #efefef;
   color: #FF4040;
   border-color: transparent;
+  font-weight: 500;
 }
 .card:hover .media.media--hover-effect > img:first-child:only-child, 
 .card-wrapper:hover .media.media--hover-effect > img:first-child:only-child{
@@ -2103,6 +2105,7 @@ fieldset.product-form__input .form__label,
   color: #FF4040;
   border-color: transparent;
   border-radius: 0;
+  font-weight: 500;
 }
 .product .badge.price__badge-sale{
   background: #FF4040;
