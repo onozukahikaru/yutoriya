@@ -1043,6 +1043,7 @@ fieldset.product-form__input .form__label,
 }
 .badge.soldout{
   background: #ccc;
+  border: none;
   color: #555;
 }
 .card:hover .media.media--hover-effect > img:first-child:only-child, 
