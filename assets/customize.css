@@ -2391,6 +2391,10 @@ div#bookmarkit.swpbutton2:hover{
 .template-404 .page_404{
   max-width: 200px;
 }
+.pages_other .collection-hero__title{
+  margin: 4rem 0 0rem;
+  text-align: center;
+}
 @media screen and (max-width: 768px){
   .rte table tr{
     display: flex;
@@ -2402,6 +2406,9 @@ div#bookmarkit.swpbutton2:hover{
   }
   .search-modal{
     height: 130px;
+  }
+  .pages_other .facet-filters{
+    padding-left: 0;
   }
 }
 @media screen and (min-width: 769px){
@@ -2451,6 +2458,9 @@ div#bookmarkit.swpbutton2:hover{
   .page_ranking .grid__item:nth-child(5)::after{
     max-width: 45px;
     max-height: 45px;
+  }
+  .pages_other .collection-hero__title {
+    margin: 5rem 0 1rem;
   }
 }
 
