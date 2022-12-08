@@ -285,6 +285,10 @@ details[open] > .header__submenu a .menuarrow{
   color: #EA9573;
 }
 @media screen and (max-width: 768px) {
+  #shopify-section-header{
+    position: fixed;
+    width: 100%;
+  }
   header.header{
     background: white;
     display: flex;
@@ -294,7 +298,7 @@ details[open] > .header__submenu a .menuarrow{
     padding-top: 5px;
     padding-left: 15px;
     padding-right: 15px;
-    position: fixed;
+    position: relative;
     width: 100%;
   }
   main{
