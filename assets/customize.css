@@ -2391,12 +2391,30 @@ div#bookmarkit.swpbutton2:hover{
 .template-404 .page_404{
   max-width: 200px;
 }
-.pages_other .collection-hero__title{
+.pages_other .collection-hero__title,
+.shopify-policy__title{
   margin: 4rem 0 0rem;
   text-align: center;
 }
 .pages_other .mobile-facets__open{
   color: black;
+}
+.pages_other .caption-with-letter-spacing{
+  font-size: 1.4rem;
+}
+#cart .cart-remove-button .icon-remove{
+  height: 2rem;
+  width: 2rem;
+}
+.shopify-policy__body{
+  margin: 4rem 0 4rem;
+  line-height: 1.5em;
+}
+:is(.account,.order) p{
+  line-height: 1.5em;
+}
+.contact__field-error{
+  padding: 1rem;
 }
 @media screen and (max-width: 768px){
   .rte table tr{
@@ -2462,8 +2480,12 @@ div#bookmarkit.swpbutton2:hover{
     max-width: 45px;
     max-height: 45px;
   }
-  .pages_other .collection-hero__title {
+  .pages_other .collection-hero__title,
+  .shopify-policy__title {
     margin: 5rem 0 1rem;
+  }
+  .shopify-policy__body{
+    text-align: center;
   }
 }
 
