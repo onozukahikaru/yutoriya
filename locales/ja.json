@@ -304,9 +304,9 @@
   "customer": {
     "account": {
       "title": "マイページ",
-      "details": "マイページ詳細",
+      "details": "アカウントの詳細",
       "view_addresses": "住所を確認",
-      "return": "マイページの詳細に戻る"
+      "return": "アカウントの詳細に戻る"
     },
     "account_fallback": "マイページ",
     "activate_account": {
