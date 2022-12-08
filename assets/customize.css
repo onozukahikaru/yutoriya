@@ -2161,6 +2161,7 @@ div#bookmarkit.swpbutton2:hover{
 .product__info-container .price--on-sale .price-item--regular{
   color: #888;
   margin-bottom: 1rem;
+  font-size: 1.3rem;
 }
 .shopify-app-block #stamped-reviews-widget[data-widget-type="top-rated"] .stamped-top-rated-title{
   display: block;
