@@ -407,7 +407,7 @@ details[open] > .header__submenu a .menuarrow{
     border: none;
   }
   #menu-drawer .menu-drawer__submenu .menu-drawer__menu{
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
   #menu-drawer .menu-drawer__inner-submenu .menu-drawer__menu > li{
     border-bottom: none;
@@ -415,7 +415,7 @@ details[open] > .header__submenu a .menuarrow{
   #menu-drawer .menu-drawer__inner-submenu .menu-drawer__menu > li a{
     font-weight: 400;
     font-size: 1.5rem;
-    padding: 0.5rem 0 0.5rem 2rem;
+    padding: 1rem 0 0.5rem 2rem;
   }
   .has-submenu details[open] .menuplus{
     display: none;
@@ -2417,6 +2417,17 @@ div#bookmarkit.swpbutton2:hover{
 .contact__field-error{
   padding: 1rem;
 }
+#FacetFiltersFormMobile .mobile-facets__footer{
+  margin-top: 0;
+  flex-direction: column-reverse;
+}
+#FacetFiltersFormMobile .mobile-facets__footer .button--primary{
+  width: 100%;
+  margin: 0 0 3rem;
+}
+#FacetFiltersFormMobile .mobile-facets__sort .select__select{
+  font-size: 1.6rem;
+}
 @media screen and (max-width: 768px){
   .rte table tr{
     display: flex;
@@ -2581,15 +2592,38 @@ div[data-widget-style*=standard] .stamped-tab-container{
 .btn_wide{
   width: 100%;
 }
+.customer.login h1{
+  width: 70%;
+  margin: auto;
+}
+.customer.login p,
+.shopify-challenge__container p{
+  line-height: 1.5em;
+  margin-bottom: 1rem;
+}
+.customer button{
+  width: 100%;
+}
+.shopify-challenge__container .shopify-challenge__button{
+  width: 100%;
+  margin-top: 2rem;
+}
 @media screen and (max-width: 768px){
   .addresses form .sp_wide button{
     max-width: none;
     width: 100%;
   }
+  .shopify-challenge__container{
+    max-width: 33.4rem;
+  }
 }
 @media screen and (min-width: 769px){
   .customer{
     margin-bottom: 8rem;
+  }
+  .customer.login h1{
+    width: 60%;
+    margin: auto;
   }
 }
 
