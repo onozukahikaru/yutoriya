@@ -2395,6 +2395,9 @@ div#bookmarkit.swpbutton2:hover{
   margin: 4rem 0 0rem;
   text-align: center;
 }
+.pages_other .mobile-facets__open{
+  color: black;
+}
 @media screen and (max-width: 768px){
   .rte table tr{
     display: flex;
