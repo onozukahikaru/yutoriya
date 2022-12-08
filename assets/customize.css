@@ -1132,7 +1132,7 @@ fieldset.product-form__input .form__label,
   content: '';
   position: absolute;
   top: -20px;
-  left: 50%;
+  left: 52%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -1160,6 +1160,7 @@ fieldset.product-form__input .form__label,
   max-width: 35px;
   max-height: 35px;
   top: -15px;
+  left: 50%;
 }
 .section_ranking .grid__item:nth-child(5)::after {
   background-image: url(../assets/icon-ranking5.png);
@@ -1167,6 +1168,7 @@ fieldset.product-form__input .form__label,
   max-width: 35px;
   max-height: 35px;
   top: -15px;
+  left: 50%;
 }
 .section_ranking .ranking_list{
   position: relative;
@@ -2356,7 +2358,7 @@ div#bookmarkit.swpbutton2:hover{
   content: '';
   position: absolute;
   top: -20px;
-  left: 50%;
+  left: 52%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -2384,6 +2386,7 @@ div#bookmarkit.swpbutton2:hover{
   max-width: 35px;
   max-height: 35px;
   top: -15px;
+  left: 50%;
 }
 .page_ranking .grid__item:nth-child(5)::after {
   background-image: url(../assets/icon-ranking5.png);
@@ -2391,6 +2394,7 @@ div#bookmarkit.swpbutton2:hover{
   max-width: 35px;
   max-height: 35px;
   top: -15px;
+  left: 50%;
 }
 .template-404 .page_404{
   max-width: 200px;
