@@ -312,6 +312,7 @@ details[open] > .header__submenu a .menuarrow{
     display: block;
     grid-template-rows: none;
     align-content: inherit;
+    overflow-x: hidden;
   }
   .header__icon{
     width: 4rem;
@@ -322,7 +323,7 @@ details[open] > .header__submenu a .menuarrow{
   } 
   .header__icons{
     margin-right: 30px;
-    margin-left: 20px;
+    margin-left: 12px;
   }
   .header_bar{
     display: flex;
