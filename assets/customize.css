@@ -2402,7 +2402,7 @@ div#bookmarkit.swpbutton2:hover{
 .pages_other .caption-with-letter-spacing{
   font-size: 1.4rem;
 }
-#cart .cart-remove-button .icon-remove{
+#cart cart-remove-button .icon-remove{
   height: 2rem;
   width: 2rem;
 }
