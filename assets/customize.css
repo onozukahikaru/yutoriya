@@ -1042,9 +1042,9 @@ fieldset.product-form__input .form__label,
   left: -90px;
 }
 .badge.soldout{
-  background: #ccc;
+  background: #efefef;
+  color: #FF4040;
   border-color: transparent;
-  color: #555;
 }
 .card:hover .media.media--hover-effect > img:first-child:only-child, 
 .card-wrapper:hover .media.media--hover-effect > img:first-child:only-child{
@@ -2099,8 +2099,8 @@ fieldset.product-form__input .form__label,
   box-shadow: 0 0 0 0.1rem #EA9573;
 }
 .product .price.price--sold-out .price__badge-sold-out{
-  background: #ccc;
-  color: #555;
+  background: #efefef;
+  color: #FF4040;
   border-color: transparent;
   border-radius: 0;
 }

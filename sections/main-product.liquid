@@ -580,7 +580,9 @@
                       value="{{ product.selected_or_first_available_variant.id }}"
                       disabled
                     >
+                    
                     <div class="product-form__buttons">
+                      {% if product.available %}
                       <button
                         type="submit"
                         name="add"
@@ -609,8 +611,11 @@
                           </svg>
                         </div>
                       </button>
+                      {% endif %}
                       {%- if block.settings.show_dynamic_checkout -%}
-                        {{ form | payment_button }}
+                        {% if product.available %}
+                          {{ form | payment_button }}
+                        {%- endif -%}
                       {%- endif -%}
                     </div>
                   {%- endform -%}
@@ -642,7 +647,10 @@
                   </template>
                 </pickup-availability>
               </div>
-<div id="smartwishlist" data-product="{{ product.id }}" data-variant="{{ product.variants.first.id }}"></div>
+
+              {% if product.available %}
+                <div id="smartwishlist" data-product="{{ product.id }}" data-variant="{{ product.variants.first.id }}"></div>
+              {% endif %}
 
               <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
             {%- when 'rating' -%}
