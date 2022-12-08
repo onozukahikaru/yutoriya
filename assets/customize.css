@@ -2535,6 +2535,9 @@ input.stamped-button.stamped-button-primary.button.button-primary.btn.btn-primar
   width: 100%;
   margin: auto;
 }
+div[data-widget-style*=standard] .stamped-summary-ratings{
+  border-right: none!important;
+}
 div[data-widget-style*=standard] .stamped-tab-container{
   margin-bottom: 2rem;
 }
@@ -2608,6 +2611,11 @@ div[data-widget-style*=standard] .stamped-tab-container{
   width: 100%;
   margin-top: 2rem;
 }
+.btn_account_logout{
+  margin: 5rem auto 2rem;
+  display: block;
+  text-align: center;
+}
 @media screen and (max-width: 768px){
   .addresses form .sp_wide button{
     max-width: none;
@@ -2624,6 +2632,9 @@ div[data-widget-style*=standard] .stamped-tab-container{
   .customer.login h1{
     width: 60%;
     margin: auto;
+  }
+  .btn_account_logout{{
+    margin: 2rem auto 2rem;
   }
 }
 
