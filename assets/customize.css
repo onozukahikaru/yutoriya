@@ -103,7 +103,7 @@ a.button--secondary:after{
   box-shadow: 0 0 0 calc(var(--buttons-border-width) + var(--border-offset)) rgba(var(--color-button-text), var(--border-opacity)), 0 0 0 var(--buttons-border-width) rgba(var(--color-button), var(--alpha-button-background));
 }
 .pages_other footer.footer{
-  margin-top: 50px;
+  margin-top: 100px;
 }
 @media screen and (max-width: 768px){
   .page-width{
@@ -128,9 +128,6 @@ a.button--secondary:after{
   }
   span.icon-wrap img {
     max-width: 10px;
-  }
-  .pages_other footer.footer{
-    margin-top: 100px;
   }
 }
 
