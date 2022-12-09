@@ -449,6 +449,11 @@ details[open] > .header__submenu a .menuarrow{
   }
   
 }
+@media screen and (max-width: 360px) {
+  .header__icons{
+    margin-right: 16px;
+  }
+}
 @media screen and (min-width: 769px) {
   header .header__heading-logo{
     max-width: 270px;
