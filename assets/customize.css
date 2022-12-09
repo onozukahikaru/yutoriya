@@ -43,6 +43,7 @@ a:hover{
   background: white;
   border-radius: 20px;
   width: 15px;
+  min-width: 15px;
   height: 15px;
   position: relative;
 }
