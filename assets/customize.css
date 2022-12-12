@@ -1090,6 +1090,9 @@ fieldset.product-form__input .form__label,
   margin-bottom: 1rem;
   padding: 0;
 }
+.article-template__content{
+  line-height: 1.5em;
+}
 @media screen and (max-width: 768px){
   .collection__description p{
     text-align: left;
@@ -1669,6 +1672,9 @@ fieldset.product-form__input .form__label,
     top: -90px;
     left: 30px;
   }
+  .section-collection-yutoriya .card__media .media img{
+    padding: 1rem 0;
+  }
   .shopify-section.section-collection-yutoriya .grid__item{
     padding: 1rem 0.5rem;
   }
@@ -1707,6 +1713,7 @@ fieldset.product-form__input .form__label,
   .section-collection-yutoriya .card .media.media--hover-effect > img:only-child, 
   .section-collection-yutoriya .card-wrapper .media.media--hover-effect > img:only-child{
     opacity: 1!important;
+    padding: 2rem 0;
   }
 }
 
@@ -2338,6 +2345,7 @@ div#bookmarkit.swpbutton2:hover{
   font-size: 2.5rem;
   letter-spacing: 4px;
   margin-top: 1rem!important;
+  text-align: center;
 }
 .page_law{
   margin-bottom: 5rem;
