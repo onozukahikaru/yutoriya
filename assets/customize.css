@@ -1561,13 +1561,6 @@ fieldset.product-form__input .form__label,
   .shopify-section.section-collection-bird .grid__item{
     padding: 1rem 0.5rem;
   }
-  .shopify-section.section-collection-bird .grid__item:first-child .media img{
-    padding-bottom: 0.8rem;
-  }
-  .shopify-section.section-collection-bird .grid__item:nth-child(4) .media img{
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
-  }
   .shopify-section.section-collection-bird .collection-list-view-all{
     margin-top: 4rem;
   }
