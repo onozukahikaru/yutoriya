@@ -76,13 +76,41 @@
           "settings": {
             "collection": "コザクラインコ"
           }
+        },
+        "59ea597a-0962-4d3b-bd5e-3495621e39ab": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "ウロコインコ-1"
+          }
+        },
+        "75a4dd0c-f14f-4984-acb2-0965750de2d0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "シロハラインコ"
+          }
+        },
+        "b691ac1a-f8b4-4ab4-92f8-a647024cf0bd": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "マメルリハ-1"
+          }
+        },
+        "f2854969-f0e0-42e6-b9da-d581c197a18d": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "オキナインコ"
+          }
         }
       },
       "block_order": [
         "template--15922127962277__e565a449-39b9-4b5c-95bd-8a249ee4b9c4-16684829458d74e986-0",
         "template--15922127962277__e565a449-39b9-4b5c-95bd-8a249ee4b9c4-16684829458d74e986-1",
         "template--15922127962277__e565a449-39b9-4b5c-95bd-8a249ee4b9c4-16684829458d74e986-2",
-        "020f0314-2ac4-4c99-81c3-7f66096a0f53"
+        "020f0314-2ac4-4c99-81c3-7f66096a0f53",
+        "59ea597a-0962-4d3b-bd5e-3495621e39ab",
+        "75a4dd0c-f14f-4984-acb2-0965750de2d0",
+        "b691ac1a-f8b4-4ab4-92f8-a647024cf0bd",
+        "f2854969-f0e0-42e6-b9da-d581c197a18d"
       ],
       "settings": {
         "title": "鳥の種類から選ぶ",
