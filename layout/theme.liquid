@@ -249,6 +249,19 @@
     gtag('config', 'G-L7ZHP267LL');
   </script>
   <meta name="google-site-verification" content="G6Z67htZg61a4rJOPRriahpArvQovnsUtrp6hdrGCUY" />
+  {%- assign full_url = canonical_url | split: '://www.' | last | split: '://' | last -%}
+  <link rel="alternate" hreflang="ja" href="{{ canonical_url }}">
+  <link rel="alternate" hreflang="en" href="https://en.{{ full_url }}">
+  <link rel="alternate" hreflang="zh" href="https://zh.{{ full_url }}">
+  <link rel="alternate" hreflang="zh-tw" href="https://zh-tw.{{ full_url }}">
+  
+      
+  <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+  <script>
+      Weglot.initialize({
+          api_key: 'wg_56d5f0ae5d04e2f487c4909258fd72c62'
+      });
+  </script>
 </head>
 {%- if template == 'index' -%}
   <body class="gradient homepage">
