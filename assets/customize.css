@@ -115,6 +115,9 @@ a.button--secondary:after{
   .pages_other .collection .badge.sale{
     left: -45px;
   }
+  footer.footer .footer__content-bottom-wrapper .footer__localization .localization-form__select{
+    margin: 0;
+  }
 }
 @media screen and (min-width: 769px){
   .collection-list .card__information a{
@@ -128,6 +131,16 @@ a.button--secondary:after{
   }
   span.icon-wrap img {
     max-width: 10px;
+  }
+  footer.footer .footer__content-bottom-wrapper{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer.footer .footer__content-bottom-wrapper .footer__localization,
+  footer.footer .footer__content-bottom-wrapper .footer__column--info{
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -486,6 +499,7 @@ details[open] > .header__submenu a .menuarrow{
     font-size: 1.4rem;
     font-weight: 500;
     padding: 1.5rem 0.5rem 1rem 1.5rem;
+    text-align: left;
   }
   .header__inline-menu li .header__submenu li a .menuarrow{
     display: block;
