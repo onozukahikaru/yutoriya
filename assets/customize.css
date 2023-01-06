@@ -1107,6 +1107,17 @@ fieldset.product-form__input .form__label,
 .article-template__content{
   line-height: 1.5em;
 }
+.product .localization-form:only-child h2.caption-large{
+  font-weight: 600;
+  color: rgba(var(--color-foreground), 0.75);
+}
+.product .localization-form:only-child .localization-form__select{
+  margin-left: 0;
+}
+.product .localization-selector + .disclosure__list-wrapper{
+  bottom: auto;
+  top: 52px;
+}
 @media screen and (max-width: 768px){
   .collection__description p{
     text-align: left;
